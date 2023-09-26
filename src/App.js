@@ -1,11 +1,15 @@
 import Navbar from "./Navbar";
-import AboutMe from "./AboutMe";
+import Home from "./Home";
+import About from "./About";
+import Portofolio from "./Portofolio";
 function App() {
   return (
-    <div>
+    <div id="container">
       <Navbar />
-      <div className="container mx-auto">
-        <AboutMe />
+      <div className="container mx-auto pb-10">
+        <Home />
+        <About />
+        <Portofolio />
       </div>
     </div>
   );
