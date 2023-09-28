@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       id="about-page"
-      className="flex flex-row h-screen gap-20 flex-wrap justify-center px-5 sm:px-20 content-center"
+      className="flex flex-row sm:h-screen gap-20 flex-wrap justify-center content-between sm:content-center px-5 sm:px-20 pb-20 sm:pb-0"
     >
       <div className="sm:w-2/6 flex align-middle content-center flex-wrap">
         <img src="stack.png" className="rounded-xl h-fit" alt="" />
@@ -14,16 +14,16 @@ const About = () => {
           ABOUT ME
         </div>
         <div className="text-xl font-extrabold mb-6">
-          A dedicated Full Stack Web Developer based in Kediri, Indonesia
+          A dedicated Full Stack Web Developer based in Surabaya, Indonesia
         </div>
         <div className=" text-gray-700 tracking-tight">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sit
-          veniam commodi ea, expedita quod minus dignissimos? Nostrum, quaerat
-          velit deserunt itaque repellat suscipit est saepe necessitatibus
-          maxime alias debitis. Atque aperiam deleniti asperiores dignissimos
-          minus quasi ea esse obcaecati dolor consectetur quas excepturi
-          voluptatibus molestias, vero nulla eaque quaerat quibusdam incidunt
-          corrupti sapiente illum nihil animi. Asperiores, similique ad?
+          Hello, I'm Achmad Affandi Fauzan, a dedicated Full Stack Web Developer
+          based in Surabaya, Indonesia. Currently a third-year student at
+          Universitas Airlangga, pursuing Bachelor of Information System. I'm
+          passionate about creating dynamic web experiences that seamlessly
+          blend form and function. I thrive on turning ideas into fully
+          functional web applications. I'm excited to contribute my skills and
+          expertise to create innovative web solutions.
         </div>
       </div>
     </div>

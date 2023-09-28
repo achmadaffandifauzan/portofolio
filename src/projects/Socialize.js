@@ -94,10 +94,9 @@ const Socialize = ({ windowWidth }) => {
       <div className="sm:w-2/6 flex flex-col justify-center sm:gap-8">
         <div className="font-bold text-center text-sm  mb-2">SOCIALIZE</div>
         <div className="text-center text-gray-700 ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sit
-          veniam commodi ea, expedita quod minus dignissimos? Nostrum, quaerat
-          velit deserunt itaque repellat suscipit est saepe necessitatibus
-          maxime alias debitis.
+          Social Media Platform, Powered by Node.js and built upon the Express
+          framework, with real time chatting feature using Socket.io and
+          React.js
         </div>
         <div className="text-sm flex flex-row flex-wrap justify-around font-bold my-4">
           <div className="mx-4 my-1 flex gap-2 ">
