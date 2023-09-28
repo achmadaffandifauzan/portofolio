@@ -4,7 +4,7 @@ const Vote = ({ windowWidth }) => {
   return (
     <div
       id="project_2"
-      className="flex flex-col-reverse sm:flex-row flex-wrap justify-center gap-20 content-center"
+      className="flex flex-col-reverse sm:flex-row flex-wrap justify-center gap-20 mb-24 content-center"
     >
       <div className="sm:w-2/6 flex flex-col justify-center sm:gap-8">
         <div className="font-bold text-center text-sm  mb-2">
@@ -90,7 +90,7 @@ const Vote = ({ windowWidth }) => {
           return (
             <div
               id="previewProject-vote"
-              className="sm:w-2/6 flex flex-col justify-between gap-5 content-center relative"
+              className="sm:w-2/6 flex flex-col justify-center gap-5 content-center relative"
               onMouseEnter={(e) => {
                 e.currentTarget
                   .querySelector("#preview-gif")
@@ -139,7 +139,7 @@ const Vote = ({ windowWidth }) => {
           return (
             <div
               id="previewProject-vote"
-              className="sm:w-2/6 flex flex-col justify-between gap-5 content-center relative"
+              className="sm:w-2/6 flex flex-col justify-center gap-5 content-center relative"
             >
               <img
                 id="preview-png"

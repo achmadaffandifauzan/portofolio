@@ -4,7 +4,7 @@ const Eztes = ({ windowWidth }) => {
   return (
     <div
       id="project_3"
-      className="flex flex-row flex-wrap justify-center gap-20 content-center"
+      className="flex flex-row flex-wrap justify-center gap-20 mb-24 content-center"
     >
       {(() => {
         console.log(windowWidth.current);
@@ -12,7 +12,7 @@ const Eztes = ({ windowWidth }) => {
           return (
             <div
               id="previewProject-eztes"
-              className="sm:w-2/6 flex flex-col justify-between gap-5 content-center relative"
+              className="sm:w-2/6 flex flex-col justify-center gap-5 content-center relative"
               onMouseEnter={(e) => {
                 e.currentTarget
                   .querySelector("#preview-gif")
@@ -61,7 +61,7 @@ const Eztes = ({ windowWidth }) => {
           return (
             <div
               id="previewProject-eztes"
-              className="sm:w-2/6 flex flex-col justify-between gap-5 content-center relative"
+              className="sm:w-2/6 flex flex-col justify-center gap-5 content-center relative"
             >
               <img
                 id="preview-png"

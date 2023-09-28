@@ -20,7 +20,10 @@ const Navbar = () => {
         >
           Projects
         </a>
-        <a className="text-black text-sm font-bold px-3 tracking-wide">
+        <a
+          href="#contact-page"
+          className="text-black text-sm font-bold px-3 tracking-wide"
+        >
           Contact
         </a>
       </div>
