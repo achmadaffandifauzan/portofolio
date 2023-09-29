@@ -20,11 +20,11 @@ const Contact = () => {
       <div className="my-5 flex flex-row content-center justify-center">
         <img src="logo/linkedin.svg" className="w-6 me-6" alt="" />
         <span className="me-2 truncate max-w-xs sm:max-w-fit ">
-          linkedin.com/in/achmad-affandi-fauzan-3458061bb
+          linkedin.com/in/achmad-affandi-fauzan
         </span>
         <a
           target="_blank"
-          href="https://www.linkedin.com/in/achmad-affandi-fauzan-3458061bb/"
+          href="https://www.linkedin.com/in/achmad-affandi-fauzan/"
           className="flex content-center min-w-max"
         >
           <img src="logo/new-window.svg" className="w-4" alt="" />
