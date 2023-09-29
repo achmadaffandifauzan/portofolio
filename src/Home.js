@@ -22,7 +22,7 @@ const Home = () => {
           </div>
         </div>
         <div className="flex-initial w-80 sm:w-96 self-center">
-          <img src="foto_framed_sketch.png" alt="" />
+          <img src="foto_hijau_circle.png" alt="" />
         </div>
       </div>
     </div>
