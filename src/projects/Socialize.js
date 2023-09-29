@@ -4,7 +4,7 @@ const Socialize = ({ windowWidth }) => {
   return (
     <div
       id="project_1"
-      className="flex flex-row flex-wrap justify-center gap-20 mb-24 content-center"
+      className="flex flex-row flex-wrap justify-center gap-20 mb-24 content-center "
     >
       {(() => {
         if (windowWidth.current >= 640) {
@@ -31,13 +31,13 @@ const Socialize = ({ windowWidth }) => {
             >
               <img
                 id="preview-png"
-                className="transition duration-300 "
+                className="transition duration-300  "
                 src={"previewProject-socialize.png"}
                 alt=""
               />
               <img
                 id="preview-gif"
-                className="transition duration-300 absolute top-1/4 opacity-0"
+                className="transition duration-300 absolute top-1/4 opacity-0  "
                 src={"previewProject-socialize.gif"}
                 alt=""
               />
@@ -64,13 +64,13 @@ const Socialize = ({ windowWidth }) => {
             >
               <img
                 id="preview-png"
-                className="transition duration-300 "
+                className="transition duration-300  "
                 src={"previewProject-socialize.png"}
                 alt=""
               />
               <img
                 id="preview-gif"
-                className="transition duration-300 absolute top-1/4 opacity-0"
+                className="transition duration-300 absolute top-1/4 opacity-0 "
                 src={"previewProject-socialize.gif"}
                 alt=""
               />
