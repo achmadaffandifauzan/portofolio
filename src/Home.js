@@ -21,8 +21,8 @@ const Home = () => {
             </span>
           </div>
         </div>
-        <div className="flex-initial w-80 self-center">
-          <img src="foto_framed_hd.png" alt="" />
+        <div className="flex-initial w-80 sm:w-96 self-center">
+          <img src="foto_framed_sketch.png" alt="" />
         </div>
       </div>
     </div>
