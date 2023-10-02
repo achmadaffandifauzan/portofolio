@@ -12,7 +12,7 @@ const Eztes = ({ windowWidth }) => {
           return (
             <div
               id="previewProject-eztes"
-              className="sm:w-2/6 flex flex-col justify-center gap-5 content-center relative"
+              className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
               onMouseEnter={(e) => {
                 e.currentTarget
                   .querySelector("#preview-gif")
@@ -61,7 +61,7 @@ const Eztes = ({ windowWidth }) => {
           return (
             <div
               id="previewProject-eztes"
-              className="sm:w-2/6 flex flex-col justify-center gap-5 content-center relative"
+              className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
             >
               <img
                 id="preview-png"
@@ -93,7 +93,7 @@ const Eztes = ({ windowWidth }) => {
         }
       })()}
 
-      <div className="sm:w-2/6 flex flex-col justify-center sm:gap-8">
+      <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
         <div className="font-bold text-center text-sm  mb-2">EZTES</div>
         <div className="text-center text-gray-700 ">
           Online Learning Platform, Powered by Node.js. This web application

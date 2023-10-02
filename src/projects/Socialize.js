@@ -11,7 +11,7 @@ const Socialize = ({ windowWidth }) => {
           return (
             <div
               id="previewProject-socialize"
-              className="sm:w-2/6 flex flex-col justify-center gap-5 content-center relative"
+              className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
               onMouseEnter={(e) => {
                 e.currentTarget
                   .querySelector("#preview-gif")
@@ -60,7 +60,7 @@ const Socialize = ({ windowWidth }) => {
           return (
             <div
               id="previewProject-socialize"
-              className="sm:w-2/6 flex flex-col justify-center gap-5 content-center relative"
+              className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
             >
               <img
                 id="preview-png"
@@ -91,7 +91,7 @@ const Socialize = ({ windowWidth }) => {
           );
         }
       })()}
-      <div className="sm:w-2/6 flex flex-col justify-center sm:gap-8">
+      <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
         <div className="font-bold text-center text-sm  mb-2">SOCIALIZE</div>
         <div className="text-center text-gray-700 ">
           Social Media Platform, Powered by Node.js and built upon the Express
