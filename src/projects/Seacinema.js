@@ -1,6 +1,17 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
+import LoadingAnimation from "../LoadingAnimation";
 
 const Seacinema = ({ windowWidth }) => {
+  const [loading, setLoading] = useState(true);
+  const pngImageUrl = "previewProject-sea-cinema.png";
+  useEffect(() => {
+    const image = new Image();
+    image.src = pngImageUrl;
+
+    image.onload = () => {
+      setLoading(false);
+    };
+  }, [pngImageUrl]);
   return (
     <div
       id="project_4"
@@ -83,95 +94,95 @@ const Seacinema = ({ windowWidth }) => {
         </div>
       </div>
 
-      {(() => {
-        if (windowWidth.current >= 640) {
-          return (
-            <div
-              id="previewProject-sea-cinema"
-              className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
-              onMouseEnter={(e) => {
-                e.currentTarget
-                  .querySelector("#preview-gif")
-                  .classList.toggle("opacity-0");
-                e.currentTarget
-                  .querySelector("#preview-png")
-                  .classList.toggle("opacity-0");
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget
-                  .querySelector("#preview-gif")
-                  .classList.toggle("opacity-0");
-                e.currentTarget
-                  .querySelector("#preview-png")
-                  .classList.toggle("opacity-0");
-              }}
-            >
-              <img
-                loading="lazy"
-                id="preview-png"
-                className="transition duration-300 "
-                src={"previewProject-sea-cinema.png"}
-                alt=""
-              />
-              <img
-                loading="lazy"
-                id="preview-gif"
-                className="transition duration-300 absolute top-1/4 opacity-0"
-                src={"previewProject-sea-cinema.gif"}
-                alt=""
-              />
-              <button
-                className="justify-self-center block sm:hidden self-center px-3 py-1 bg-blue-600 text-white text-sm text-center rounded-lg"
-                onClick={(e) => {
-                  e.currentTarget.parentElement
+      {loading ? (
+        <LoadingAnimation />
+      ) : (
+        (() => {
+          if (windowWidth.current >= 640) {
+            return (
+              <div
+                id="previewProject-sea-cinema"
+                className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
+                onMouseEnter={(e) => {
+                  e.currentTarget
                     .querySelector("#preview-gif")
                     .classList.toggle("opacity-0");
-                  e.currentTarget.parentElement
+                  e.currentTarget
+                    .querySelector("#preview-png")
+                    .classList.toggle("opacity-0");
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget
+                    .querySelector("#preview-gif")
+                    .classList.toggle("opacity-0");
+                  e.currentTarget
                     .querySelector("#preview-png")
                     .classList.toggle("opacity-0");
                 }}
               >
-                PREVIEW
-              </button>
-            </div>
-          );
-        } else {
-          return (
-            <div
-              id="previewProject-sea-cinema"
-              className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
-            >
-              <img
-                loading="lazy"
-                id="preview-png"
-                className="transition duration-300 "
-                src={"previewProject-sea-cinema.png"}
-                alt=""
-              />
-              <img
-                loading="lazy"
-                id="preview-gif"
-                className="transition duration-300 absolute top-1/4 opacity-0"
-                src={"previewProject-sea-cinema.gif"}
-                alt=""
-              />
-              <button
-                className="justify-self-center block sm:hidden self-center px-3 py-1 bg-blue-600 text-white text-sm text-center rounded-lg"
-                onClick={(e) => {
-                  e.currentTarget.parentElement
-                    .querySelector("#preview-gif")
-                    .classList.toggle("opacity-0");
-                  e.currentTarget.parentElement
-                    .querySelector("#preview-png")
-                    .classList.toggle("opacity-0");
-                }}
+                <img
+                  id="preview-png"
+                  className="transition duration-300 "
+                  src={"previewProject-sea-cinema.png"}
+                  alt=""
+                />
+                <img
+                  id="preview-gif"
+                  className="transition duration-300 absolute top-1/4 opacity-0"
+                  src={"previewProject-sea-cinema.gif"}
+                  alt=""
+                />
+                <button
+                  className="justify-self-center block sm:hidden self-center px-3 py-1 bg-blue-600 text-white text-sm text-center rounded-lg"
+                  onClick={(e) => {
+                    e.currentTarget.parentElement
+                      .querySelector("#preview-gif")
+                      .classList.toggle("opacity-0");
+                    e.currentTarget.parentElement
+                      .querySelector("#preview-png")
+                      .classList.toggle("opacity-0");
+                  }}
+                >
+                  PREVIEW
+                </button>
+              </div>
+            );
+          } else {
+            return (
+              <div
+                id="previewProject-sea-cinema"
+                className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
               >
-                PREVIEW
-              </button>
-            </div>
-          );
-        }
-      })()}
+                <img
+                  id="preview-png"
+                  className="transition duration-300 "
+                  src={"previewProject-sea-cinema.png"}
+                  alt=""
+                />
+                <img
+                  id="preview-gif"
+                  className="transition duration-300 absolute top-1/4 opacity-0"
+                  src={"previewProject-sea-cinema.gif"}
+                  alt=""
+                />
+                <button
+                  className="justify-self-center block sm:hidden self-center px-3 py-1 bg-blue-600 text-white text-sm text-center rounded-lg"
+                  onClick={(e) => {
+                    e.currentTarget.parentElement
+                      .querySelector("#preview-gif")
+                      .classList.toggle("opacity-0");
+                    e.currentTarget.parentElement
+                      .querySelector("#preview-png")
+                      .classList.toggle("opacity-0");
+                  }}
+                >
+                  PREVIEW
+                </button>
+              </div>
+            );
+          }
+        })()
+      )}
     </div>
   );
 };

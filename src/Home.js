@@ -1,5 +1,16 @@
-import { useState, React, useEffect } from "react";
+import { React, useState, useEffect } from "react";
+import LoadingAnimation from "./LoadingAnimation";
 const Home = () => {
+  const [loading, setLoading] = useState(true);
+  const pngImageUrl = "foto_hijau_circle.png";
+  useEffect(() => {
+    const image = new Image();
+    image.src = pngImageUrl;
+
+    image.onload = () => {
+      setLoading(false);
+    };
+  }, [pngImageUrl]);
   return (
     <div className="flex flex-col h-screen justify-center px-5 sm:px-10 content-center ">
       <div className="flex flex-col-reverse sm:flex-row flex-wrap justify-around gap-14 sm:px-20 content-center">
@@ -22,7 +33,11 @@ const Home = () => {
           </div>
         </div>
         <div className="flex-initial w-80 sm:w-96 self-center">
-          <img src="foto_hijau_circle.png" alt="" />
+          {loading ? (
+            <LoadingAnimation />
+          ) : (
+            <img src="foto_hijau_circle.png" alt="" />
+          )}
         </div>
       </div>
     </div>

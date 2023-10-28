@@ -1,13 +1,27 @@
-import { React } from "react";
-
+import { React, useState, useEffect } from "react";
+import LoadingAnimation from "./LoadingAnimation";
 const About = () => {
+  const [loading, setLoading] = useState(true);
+  const pngImageUrl = "stack.png";
+  useEffect(() => {
+    const image = new Image();
+    image.src = pngImageUrl;
+
+    image.onload = () => {
+      setLoading(false);
+    };
+  }, [pngImageUrl]);
   return (
     <div
       id="about-page"
       className="flex flex-row sm:h-screen gap-14 flex-wrap justify-center content-between sm:content-center px-5 sm:px-10 py-20 sm:py-0"
     >
       <div className="sm:w-2/6 flex align-middle content-center flex-wrap">
-        <img src="stack.png" className="rounded-xl h-fit" alt="" />
+        {loading ? (
+          <LoadingAnimation />
+        ) : (
+          <img src="stack.png" className="rounded-xl h-fit" alt="" />
+        )}
       </div>
       <div className="sm:w-2/5 ">
         <div className="text-blue-500 font-extrabold text-xs mb-2 tracking-wider">
