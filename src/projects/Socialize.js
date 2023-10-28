@@ -2,110 +2,101 @@ import { React, useState, useEffect } from "react";
 import LoadingAnimation from "../LoadingAnimation";
 
 const Socialize = ({ windowWidth }) => {
-  const [loading, setLoading] = useState(true);
+  const [loadingPNG, setLoadingPNG] = useState(true);
+  const [loadingGIF, setLoadingGIF] = useState(true);
   const pngImageUrl = "previewProject-socialize.png";
+  const gifImageUrl = "previewProject-socialize.gif";
   useEffect(() => {
     const image = new Image();
     image.src = pngImageUrl;
 
     image.onload = () => {
-      setLoading(false);
+      setLoadingPNG(false);
     };
   }, [pngImageUrl]);
+  useEffect(() => {
+    const image = new Image();
+    image.src = gifImageUrl;
+
+    image.onload = () => {
+      setLoadingGIF(false);
+    };
+  }, [gifImageUrl]);
   return (
     <div
       id="project_1"
       className="flex flex-row flex-wrap justify-center gap-20 mb-24 content-center "
     >
-      {loading ? (
-        <LoadingAnimation />
-      ) : (
-        (() => {
+      <div
+        id="previewProject-socialize"
+        className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative transition-all duration-300"
+        onMouseEnter={(e) => {
           if (windowWidth.current >= 640) {
-            return (
-              <div
-                id="previewProject-socialize"
-                className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative transition-all duration-300"
-                onMouseEnter={(e) => {
-                  e.currentTarget
-                    .querySelector("#preview-gif")
-                    .classList.toggle("opacity-0");
-                  e.currentTarget
-                    .querySelector("#preview-png")
-                    .classList.toggle("opacity-0");
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget
-                    .querySelector("#preview-gif")
-                    .classList.toggle("opacity-0");
-                  e.currentTarget
-                    .querySelector("#preview-png")
-                    .classList.toggle("opacity-0");
-                }}
-              >
-                <img
-                  id="preview-png"
-                  className="transition duration-300  "
-                  src={"previewProject-socialize.png"}
-                  alt=""
-                />
-                <img
-                  id="preview-gif"
-                  className="transition duration-300 absolute top-1/4 opacity-0  "
-                  src={"previewProject-socialize.gif"}
-                  alt=""
-                />
-                <button
-                  className="justify-self-center block sm:hidden self-center px-3 py-1 bg-blue-600 text-white text-sm text-center rounded-lg"
-                  onClick={(e) => {
-                    e.currentTarget.parentElement
-                      .querySelector("#preview-gif")
-                      .classList.toggle("opacity-0");
-                    e.currentTarget.parentElement
-                      .querySelector("#preview-png")
-                      .classList.toggle("opacity-0");
-                  }}
-                >
-                  PREVIEW
-                </button>
-              </div>
-            );
-          } else {
-            return (
-              <div
-                id="previewProject-socialize"
-                className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative transition-all duration-300"
-              >
-                <img
-                  id="preview-png"
-                  className="transition duration-300  "
-                  src={"previewProject-socialize.png"}
-                  alt=""
-                />
-                <img
-                  id="preview-gif"
-                  className="transition duration-300 absolute top-1/4 opacity-0 "
-                  src={"previewProject-socialize.gif"}
-                  alt=""
-                />
-                <button
-                  className="justify-self-center block sm:hidden self-center px-3 py-1 bg-blue-600 text-white text-sm text-center rounded-lg"
-                  onClick={(e) => {
-                    e.currentTarget.parentElement
-                      .querySelector("#preview-gif")
-                      .classList.toggle("opacity-0");
-                    e.currentTarget.parentElement
-                      .querySelector("#preview-png")
-                      .classList.toggle("opacity-0");
-                  }}
-                >
-                  PREVIEW
-                </button>
-              </div>
-            );
+            if (loadingPNG == false) {
+              e.currentTarget
+                .querySelector("#preview-gif")
+                .classList.toggle("opacity-0");
+              e.currentTarget
+                .querySelector("#preview-png")
+                .classList.toggle("opacity-0");
+            }
           }
-        })()
-      )}
+        }}
+        onMouseLeave={(e) => {
+          if (windowWidth.current >= 640) {
+            if (loadingPNG == false) {
+              e.currentTarget
+                .querySelector("#preview-gif")
+                .classList.toggle("opacity-0");
+              e.currentTarget
+                .querySelector("#preview-png")
+                .classList.toggle("opacity-0");
+            }
+          }
+        }}
+      >
+        <div id="preview-png" className="text-center">
+          {loadingPNG ? (
+            <>
+              <span className="text-sm text-gray-500 font-semibold text-center">
+                Loading Image
+              </span>
+              <LoadingAnimation />
+            </>
+          ) : (
+            <img src={"previewProject-socialize.png"} />
+          )}
+        </div>
+        <div
+          id="preview-gif"
+          className="opacity-0 absolute top-1/4 self-center transition-all duration-300"
+        >
+          {loadingGIF ? (
+            <>
+              <span className="text-sm text-gray-500 font-semibold">
+                Loading Gif
+              </span>
+              <LoadingAnimation />
+            </>
+          ) : (
+            <img src={"previewProject-socialize.gif"} />
+          )}
+        </div>
+        <button
+          className="justify-self-center block sm:hidden self-center px-3 py-1 bg-blue-600 text-white text-sm text-center rounded-lg"
+          onClick={(e) => {
+            e.currentTarget.parentElement
+              .querySelector("#preview-gif")
+              .classList.toggle("opacity-0");
+            e.currentTarget.parentElement
+              .querySelector("#preview-png")
+              .classList.toggle("opacity-0");
+          }}
+        >
+          PREVIEW
+        </button>
+      </div>
+
       <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
         <div className="font-bold text-center text-sm  mb-2">SOCIALIZE</div>
         <div className="text-center text-gray-700 ">
