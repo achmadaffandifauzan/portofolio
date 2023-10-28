@@ -20,7 +20,11 @@ const About = () => {
         {loading ? (
           <LoadingAnimation />
         ) : (
-          <img src="stack.png" className="rounded-xl h-fit" alt="" />
+          <img
+            src="stack.png"
+            className="rounded-xl h-fit transition-all duration-300"
+            alt=""
+          />
         )}
       </div>
       <div className="sm:w-2/5 ">

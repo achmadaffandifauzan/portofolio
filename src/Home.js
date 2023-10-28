@@ -36,7 +36,11 @@ const Home = () => {
           {loading ? (
             <LoadingAnimation />
           ) : (
-            <img src="foto_hijau_circle.png" alt="" />
+            <img
+              src="foto_hijau_circle.png"
+              className="transition-all duration-300"
+              alt=""
+            />
           )}
         </div>
       </div>

@@ -26,7 +26,7 @@ const Thriftnstash = ({ windowWidth }) => {
             return (
               <div
                 id="previewProject-thriftnstash"
-                className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
+                className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative transition-all duration-300"
                 onMouseEnter={(e) => {
                   e.currentTarget
                     .querySelector("#preview-gif")
@@ -75,7 +75,7 @@ const Thriftnstash = ({ windowWidth }) => {
             return (
               <div
                 id="previewProject-thriftnstash"
-                className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
+                className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative transition-all duration-300"
               >
                 <img
                   id="preview-png"
