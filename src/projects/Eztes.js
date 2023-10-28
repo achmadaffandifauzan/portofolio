@@ -1,4 +1,4 @@
-import { React, Suspense } from "react";
+import { React } from "react";
 
 const Eztes = ({ windowWidth }) => {
   return (
@@ -10,54 +10,54 @@ const Eztes = ({ windowWidth }) => {
         console.log(windowWidth.current);
         if (windowWidth.current >= 640) {
           return (
-            <Suspense fallback={<h1>🌀 Loading...</h1>}>
-              <div
-                id="previewProject-eztes"
-                className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
-                onMouseEnter={(e) => {
-                  e.currentTarget
+            <div
+              id="previewProject-eztes"
+              className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
+              onMouseEnter={(e) => {
+                e.currentTarget
+                  .querySelector("#preview-gif")
+                  .classList.toggle("opacity-0");
+                e.currentTarget
+                  .querySelector("#preview-png")
+                  .classList.toggle("opacity-0");
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget
+                  .querySelector("#preview-gif")
+                  .classList.toggle("opacity-0");
+                e.currentTarget
+                  .querySelector("#preview-png")
+                  .classList.toggle("opacity-0");
+              }}
+            >
+              <img
+                loading="lazy"
+                id="preview-png"
+                className="transition duration-300 "
+                src={"previewProject-eztes.png"}
+                alt=""
+              />
+              <img
+                loading="lazy"
+                id="preview-gif"
+                className="transition duration-300 absolute top-1/4 opacity-0"
+                src={"previewProject-eztes.gif"}
+                alt=""
+              />
+              <button
+                className="justify-self-center block sm:hidden self-center px-3 py-1 bg-blue-600 text-white text-sm text-center rounded-lg"
+                onClick={(e) => {
+                  e.currentTarget.parentElement
                     .querySelector("#preview-gif")
                     .classList.toggle("opacity-0");
-                  e.currentTarget
-                    .querySelector("#preview-png")
-                    .classList.toggle("opacity-0");
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget
-                    .querySelector("#preview-gif")
-                    .classList.toggle("opacity-0");
-                  e.currentTarget
+                  e.currentTarget.parentElement
                     .querySelector("#preview-png")
                     .classList.toggle("opacity-0");
                 }}
               >
-                <img
-                  id="preview-png"
-                  className="transition duration-300 "
-                  src={"previewProject-eztes.png"}
-                  alt=""
-                />
-                <img
-                  id="preview-gif"
-                  className="transition duration-300 absolute top-1/4 opacity-0"
-                  src={"previewProject-eztes.gif"}
-                  alt=""
-                />
-                <button
-                  className="justify-self-center block sm:hidden self-center px-3 py-1 bg-blue-600 text-white text-sm text-center rounded-lg"
-                  onClick={(e) => {
-                    e.currentTarget.parentElement
-                      .querySelector("#preview-gif")
-                      .classList.toggle("opacity-0");
-                    e.currentTarget.parentElement
-                      .querySelector("#preview-png")
-                      .classList.toggle("opacity-0");
-                  }}
-                >
-                  PREVIEW
-                </button>
-              </div>
-            </Suspense>
+                PREVIEW
+              </button>
+            </div>
           );
         } else {
           return (
@@ -66,12 +66,14 @@ const Eztes = ({ windowWidth }) => {
               className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
             >
               <img
+                loading="lazy"
                 id="preview-png"
                 className="transition duration-300 "
                 src={"previewProject-eztes.png"}
                 alt=""
               />
               <img
+                loading="lazy"
                 id="preview-gif"
                 className="transition duration-300 absolute top-1/4 opacity-0"
                 src={"previewProject-eztes.gif"}

@@ -31,12 +31,14 @@ const Thriftnstash = ({ windowWidth }) => {
               }}
             >
               <img
+                loading="lazy"
                 id="preview-png"
                 className="transition duration-300"
                 src={"previewProject-thriftnstash.png"}
                 alt=""
               />
               <img
+                loading="lazy"
                 id="preview-gif"
                 className="transition duration-300 absolute top-1/4 opacity-0"
                 src={"previewProject-thriftnstash.gif"}
@@ -64,12 +66,14 @@ const Thriftnstash = ({ windowWidth }) => {
               className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
             >
               <img
+                loading="lazy"
                 id="preview-png"
                 className="transition duration-300 "
                 src={"previewProject-thriftnstash.png"}
                 alt=""
               />
               <img
+                loading="lazy"
                 id="preview-gif"
                 className="transition duration-300 absolute top-1/4 opacity-0"
                 src={"previewProject-thriftnstash.gif"}
