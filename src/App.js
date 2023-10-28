@@ -8,7 +8,7 @@ function App() {
   return (
     <div id="container">
       <Navbar />
-      <div className="container mx-auto">
+      <div className="container mx-auto max-sm:mt-14">
         <Home />
         <About />
         <Portofolio />

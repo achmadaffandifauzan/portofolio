@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       id="about-page"
-      className="flex flex-row sm:h-screen gap-20 flex-wrap justify-center content-between sm:content-center px-5 sm:px-10 pb-20 sm:pb-0"
+      className="flex flex-row sm:h-screen gap-14 flex-wrap justify-center content-between sm:content-center px-5 sm:px-10 py-20 sm:py-0"
     >
       <div className="sm:w-2/6 flex align-middle content-center flex-wrap">
         <img src="stack.png" className="rounded-xl h-fit" alt="" />
