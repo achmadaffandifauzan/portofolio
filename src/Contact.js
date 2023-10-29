@@ -5,7 +5,7 @@ const Contact = () => {
       id="contact-page"
       className="flex flex-wrap flex-col h-screen justify-center px-5 sm:px-20 content-center "
     >
-      <img src="socials.png" className="w-56 self-center" alt="" />
+      <img src="socials.webp" className="w-56 self-center" alt="" />
       <div className="my-5 flex flex-row content-center justify-center">
         <img src="logo/github.svg" className="w-6 me-6" alt="" />
         <span className="me-2 truncate">github.com/achmadaffandifauzan</span>

@@ -24,11 +24,7 @@ const Home = () => {
           </div>
         </div>
         <div className="flex-initial w-80 sm:w-96 self-center">
-          <LazyLoadImage
-            alt={"photo_of_me"}
-            effect="blur"
-            src={"foto_hijau_circle.png"}
-          />
+          <img alt={"photo_of_me"} src={"foto_hijau_circle.webp"} />
         </div>
       </div>
     </div>
