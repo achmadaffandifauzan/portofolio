@@ -4,24 +4,24 @@ import LoadingAnimation from "../LoadingAnimation";
 const Vote = ({ windowWidth }) => {
   const [loadingPNG, setLoadingPNG] = useState(true);
   const [loadingGIF, setLoadingGIF] = useState(true);
-  const pngImageUrl = "previewProject-vote.png";
-  const gifImageUrl = "previewProject-vote.gif";
+  const imageSrc = "projects/vote.webp";
+  const animationSrc = "projects/vote_animate.webp";
   useEffect(() => {
     const image = new Image();
-    image.src = pngImageUrl;
+    image.src = imageSrc;
 
     image.onload = () => {
       setLoadingPNG(false);
     };
-  }, [pngImageUrl]);
+  }, [imageSrc]);
   useEffect(() => {
     const image = new Image();
-    image.src = gifImageUrl;
+    image.src = animationSrc;
 
     image.onload = () => {
       setLoadingGIF(false);
     };
-  }, [gifImageUrl]);
+  }, [animationSrc]);
 
   return (
     <div
@@ -144,7 +144,7 @@ const Vote = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src={"previewProject-vote.png"} />
+            <img src={"projects/vote.webp"} />
           )}
         </div>
         <div
@@ -159,7 +159,7 @@ const Vote = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src={"previewProject-eztes.gif"} />
+            <img src={"projects/vote_animate.webp"} />
           )}
         </div>
         <button

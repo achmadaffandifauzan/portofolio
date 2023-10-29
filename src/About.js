@@ -10,7 +10,7 @@ const About = () => {
       <div className="sm:w-2/6 flex align-middle content-center flex-wrap">
         <LazyLoadImage
           effect="blur"
-          src={"stack.png"}
+          src={"stack.webp"}
           className="rounded-xl h-fit transition-all duration-300"
         />
       </div>

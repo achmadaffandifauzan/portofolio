@@ -27,7 +27,7 @@ const Home = () => {
           <LazyLoadImage
             alt={"photo_of_me"}
             effect="blur"
-            src={"foto_hijau_circle.png"}
+            src={"foto_hijau_circle.webp"}
           />
         </div>
       </div>

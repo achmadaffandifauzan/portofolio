@@ -2,26 +2,26 @@ import { React, useState, useEffect } from "react";
 import LoadingAnimation from "../LoadingAnimation";
 
 const Thriftnstash = ({ windowWidth }) => {
-  const [loadingPNG, setLoadingPNG] = useState(true);
+  const [loadingImage, setLoadingImage] = useState(true);
   const [loadingGIF, setLoadingGIF] = useState(true);
-  const pngImageUrl = "previewProject-thriftnstash.png";
-  const gifImageUrl = "previewProject-thriftnstash.gif";
+  const imageSrc = "projects/thriftnstash.webp";
+  const animationSrc = "projects/thriftnstash_animate.webp";
   useEffect(() => {
     const image = new Image();
-    image.src = pngImageUrl;
+    image.src = imageSrc;
 
     image.onload = () => {
-      setLoadingPNG(false);
+      setLoadingImage(false);
     };
-  }, [pngImageUrl]);
+  }, [imageSrc]);
   useEffect(() => {
     const image = new Image();
-    image.src = gifImageUrl;
+    image.src = animationSrc;
 
     image.onload = () => {
       setLoadingGIF(false);
     };
-  }, [gifImageUrl]);
+  }, [animationSrc]);
   return (
     <div
       id="project_5"
@@ -32,7 +32,7 @@ const Thriftnstash = ({ windowWidth }) => {
         className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative transition-all duration-300"
         onMouseEnter={(e) => {
           if (windowWidth.current >= 640) {
-            if (loadingPNG == false) {
+            if (loadingImage == false) {
               e.currentTarget
                 .querySelector("#preview-gif")
                 .classList.toggle("opacity-0");
@@ -44,7 +44,7 @@ const Thriftnstash = ({ windowWidth }) => {
         }}
         onMouseLeave={(e) => {
           if (windowWidth.current >= 640) {
-            if (loadingPNG == false) {
+            if (loadingImage == false) {
               e.currentTarget
                 .querySelector("#preview-gif")
                 .classList.toggle("opacity-0");
@@ -56,7 +56,7 @@ const Thriftnstash = ({ windowWidth }) => {
         }}
       >
         <div id="preview-png" className="text-center">
-          {loadingPNG ? (
+          {loadingImage ? (
             <>
               <span className="text-sm text-gray-500 font-semibold text-center">
                 Loading Image
@@ -64,7 +64,7 @@ const Thriftnstash = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src={"previewProject-thriftnstash.png"} />
+            <img src={"projects/thriftnstash.webp"} />
           )}
         </div>
         <div
@@ -79,7 +79,7 @@ const Thriftnstash = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src={"previewProject-thriftnstash.gif"} />
+            <img src={"projects/thriftnstash_animate.webp"} />
           )}
         </div>
         <button

@@ -2,26 +2,26 @@ import { React, useState, useEffect } from "react";
 import LoadingAnimation from "../LoadingAnimation";
 
 const Seacinema = ({ windowWidth }) => {
-  const [loadingPNG, setLoadingPNG] = useState(true);
+  const [loadingImage, setLoadingImage] = useState(true);
   const [loadingGIF, setLoadingGIF] = useState(true);
-  const pngImageUrl = "previewProject-sea-cinema.png";
-  const gifImageUrl = "previewProject-sea-cinema.gif";
+  const imageSrc = "projects/seacinema.webp";
+  const animationSrc = "projects/seacinema_animate.webp";
   useEffect(() => {
     const image = new Image();
-    image.src = pngImageUrl;
+    image.src = imageSrc;
 
     image.onload = () => {
-      setLoadingPNG(false);
+      setLoadingImage(false);
     };
-  }, [pngImageUrl]);
+  }, [imageSrc]);
   useEffect(() => {
     const image = new Image();
-    image.src = gifImageUrl;
+    image.src = animationSrc;
 
     image.onload = () => {
       setLoadingGIF(false);
     };
-  }, [gifImageUrl]);
+  }, [animationSrc]);
 
   return (
     <div
@@ -110,7 +110,7 @@ const Seacinema = ({ windowWidth }) => {
         className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
         onMouseEnter={(e) => {
           if (windowWidth.current >= 640) {
-            if (loadingPNG == false) {
+            if (loadingImage == false) {
               e.currentTarget
                 .querySelector("#preview-gif")
                 .classList.toggle("opacity-0");
@@ -122,7 +122,7 @@ const Seacinema = ({ windowWidth }) => {
         }}
         onMouseLeave={(e) => {
           if (windowWidth.current >= 640) {
-            if (loadingPNG == false) {
+            if (loadingImage == false) {
               e.currentTarget
                 .querySelector("#preview-gif")
                 .classList.toggle("opacity-0");
@@ -134,7 +134,7 @@ const Seacinema = ({ windowWidth }) => {
         }}
       >
         <div id="preview-png" className="text-center">
-          {loadingPNG ? (
+          {loadingImage ? (
             <>
               <span className="text-sm text-gray-500 font-semibold text-center">
                 Loading Image
@@ -142,7 +142,7 @@ const Seacinema = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src={"previewProject-sea-cinema.png"} />
+            <img src={"projects/seacinema.webp"} />
           )}
         </div>
         <div
@@ -157,7 +157,7 @@ const Seacinema = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src={"previewProject-sea-cinema.gif"} />
+            <img src={"projects/seacinema_animate.webp"} />
           )}
         </div>
         <button
