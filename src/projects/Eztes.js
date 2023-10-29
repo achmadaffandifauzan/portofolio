@@ -1,5 +1,8 @@
 import { React, useState, useEffect } from "react";
 import LoadingAnimation from "../LoadingAnimation";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 const Eztes = ({ windowWidth }) => {
   const [loadingImage, setLoadingImage] = useState(true);
   const [loadingGIF, setLoadingGIF] = useState(true);
@@ -64,7 +67,7 @@ const Eztes = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src="projects/eztes.webp" />
+            <LazyLoadImage effect="blur" src={"projects/eztes.webp"} />
           )}
         </div>
         <div
@@ -79,7 +82,7 @@ const Eztes = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src={"projects/eztes_animate.webp"} />
+            <LazyLoadImage src={"projects/eztes_animate.webp"} />
           )}
         </div>
         <button

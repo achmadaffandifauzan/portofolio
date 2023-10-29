@@ -1,5 +1,7 @@
 import { React, useState, useEffect } from "react";
 import LoadingAnimation from "../LoadingAnimation";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Vote = ({ windowWidth }) => {
   const [loadingPNG, setLoadingPNG] = useState(true);
@@ -144,7 +146,7 @@ const Vote = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src={"projects/vote.webp"} />
+            <LazyLoadImage effect="blur" src={"projects/vote.webp"} />
           )}
         </div>
         <div
@@ -159,7 +161,7 @@ const Vote = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src={"projects/vote_animate.webp"} />
+            <LazyLoadImage src={"projects/vote_animate.webp"} />
           )}
         </div>
         <button

@@ -1,5 +1,7 @@
 import { React, useState, useEffect } from "react";
 import LoadingAnimation from "../LoadingAnimation";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Socialize = ({ windowWidth }) => {
   const [loadingImage, setLoadingImage] = useState(true);
@@ -64,7 +66,7 @@ const Socialize = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src={"projects/socialize.webp"} />
+            <LazyLoadImage effect="blur" src={"projects/socialize.webp"} />
           )}
         </div>
         <div
@@ -79,7 +81,7 @@ const Socialize = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src={"projects/socialize_animate.webp"} />
+            <LazyLoadImage src={"projects/socialize_animate.webp"} />
           )}
         </div>
         <button

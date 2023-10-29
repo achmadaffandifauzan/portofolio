@@ -1,5 +1,7 @@
 import { React, useState, useEffect } from "react";
 import LoadingAnimation from "../LoadingAnimation";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Seacinema = ({ windowWidth }) => {
   const [loadingImage, setLoadingImage] = useState(true);
@@ -142,7 +144,7 @@ const Seacinema = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src={"projects/seacinema.webp"} />
+            <LazyLoadImage effect="blur" src={"projects/seacinema.webp"} />
           )}
         </div>
         <div
@@ -157,7 +159,7 @@ const Seacinema = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src={"projects/seacinema_animate.webp"} />
+            <LazyLoadImage src={"projects/seacinema_animate.webp"} />
           )}
         </div>
         <button

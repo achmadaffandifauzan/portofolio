@@ -1,5 +1,7 @@
 import { React, useState, useEffect } from "react";
 import LoadingAnimation from "../LoadingAnimation";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Thriftnstash = ({ windowWidth }) => {
   const [loadingImage, setLoadingImage] = useState(true);
@@ -64,7 +66,7 @@ const Thriftnstash = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src={"projects/thriftnstash.webp"} />
+            <LazyLoadImage effect="blur" src={"projects/thriftnstash.webp"} />
           )}
         </div>
         <div
@@ -79,7 +81,7 @@ const Thriftnstash = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <img src={"projects/thriftnstash_animate.webp"} />
+            <LazyLoadImage src={"projects/thriftnstash_animate.webp"} />
           )}
         </div>
         <button
