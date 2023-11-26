@@ -5,11 +5,11 @@ const Home = () => {
   return (
     <div className="flex flex-col h-screen justify-center px-5 sm:px-10 content-center ">
       <div className="flex flex-col-reverse sm:flex-row flex-wrap justify-around gap-14 sm:px-20 content-center">
-        <div className="flex-initial flex flex-col justify-around w-full sm:w-2/5">
+        <div className="flex-initial flex flex-col sm:gap-4 sm:justify-center justify-around w-full sm:w-2/5">
           <div className="text-4xl font-bold tracking-wide mt-10">
             Full Stack Web Developer
           </div>
-          <div className="my-10 mb-4 text-gray-700 tracking-wide flex">
+          <div className="my-8 mb-4 text-gray-700 tracking-wide flex">
             <span>
               <span>
                 Hi, I'm{" "}

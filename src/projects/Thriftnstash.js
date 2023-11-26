@@ -17,13 +17,15 @@ const Thriftnstash = ({ windowWidth }) => {
     };
   }, [imageSrc]);
   useEffect(() => {
-    const image = new Image();
-    image.src = animationSrc;
+    if (!loadingImage) {
+      const image = new Image();
+      image.src = animationSrc;
 
-    image.onload = () => {
-      setLoadingGIF(false);
-    };
-  }, [animationSrc]);
+      image.onload = () => {
+        setLoadingGIF(false);
+      };
+    }
+  }, [animationSrc, loadingImage]);
   return (
     <div
       id="project_5"

@@ -17,13 +17,15 @@ const Vote = ({ windowWidth }) => {
     };
   }, [imageSrc]);
   useEffect(() => {
-    const image = new Image();
-    image.src = animationSrc;
+    if (!loadingPNG) {
+      const image = new Image();
+      image.src = animationSrc;
 
-    image.onload = () => {
-      setLoadingGIF(false);
-    };
-  }, [animationSrc]);
+      image.onload = () => {
+        setLoadingGIF(false);
+      };
+    }
+  }, [animationSrc, loadingPNG]);
 
   return (
     <div
