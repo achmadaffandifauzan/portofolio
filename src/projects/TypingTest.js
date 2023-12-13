@@ -6,8 +6,8 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const TypingTest = ({ windowWidth }) => {
   const [loadingPNG, setLoadingPNG] = useState(true);
   const [loadingGIF, setLoadingGIF] = useState(true);
-  const imageSrc = "projects/vote.webp";
-  const animationSrc = "projects/vote_animate.webp";
+  const imageSrc = "projects/typingtest.webp";
+  const animationSrc = "projects/typingtest_animate.webp";
   useEffect(() => {
     const image = new Image();
     image.src = imageSrc;
