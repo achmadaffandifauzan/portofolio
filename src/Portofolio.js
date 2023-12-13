@@ -4,6 +4,7 @@ import Seacinema from "./projects/Seacinema";
 import Socialize from "./projects/Socialize";
 import Vote from "./projects/Vote";
 import Thriftnstash from "./projects/Thriftnstash";
+import TypingTest from "./projects/TypingTest";
 
 const Portofolio = () => {
   const windowWidth = useRef(window.innerWidth);
@@ -18,6 +19,7 @@ const Portofolio = () => {
             <span className="font-extrabold">Full Stack Projects</span>
           </div>
         </div>
+        <TypingTest windowWidth={windowWidth} />
         <Socialize windowWidth={windowWidth} />
         <Vote windowWidth={windowWidth} />
         <Eztes windowWidth={windowWidth} />
