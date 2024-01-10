@@ -101,9 +101,9 @@ const Thriftnstash = ({ windowWidth }) => {
         </button>
       </div>
 
-      <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
+      <div className="sm:w-2/5 flex flex-col justify-center sm:gap-4">
         <div className="font-bold text-center text-sm  mb-2 gap-2 flex flex-col">
-          <div>THRIFT & STASH</div>
+          <div className="mb-3">THRIFT & STASH</div>
           <div className=" py-1 px-4 rounded-xl bg-blue-300 mx-1 font-semibold">
             2 People Team
           </div>

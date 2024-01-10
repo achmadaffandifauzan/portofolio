@@ -16,8 +16,8 @@ const Portofolio = () => {
           <div className="text-blue-500 font-extrabold text-xs mb-2 tracking-wider">
             PORTOFOLIO
           </div>
-          <div className="text-lg tracking-wider font-semibold">
-            <span className="font-extrabold">Full Stack Projects</span>
+          <div className="sm:text-2xl tracking-wider font-semibold">
+            <span className="font-bold">Full Stack Projects</span>
           </div>
         </div>
         <TypingTest windowWidth={windowWidth} />
@@ -28,7 +28,7 @@ const Portofolio = () => {
       </div>
       <div className="flex flex-col justify-center content-center gap-20 mt-16 tracking-tight px-5 sm:px-20">
         <div className="text-center">
-          <div className="text-lg tracking-wider font-semibold mt-10">
+          <div className="sm:text-2xl tracking-wider font-semibold mt-10">
             Full Stack <span className="font-extrabold">Collaborative </span>
             Projects
           </div>

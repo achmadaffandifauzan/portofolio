@@ -31,9 +31,11 @@ const Seareq = ({ windowWidth }) => {
       id="project_2"
       className="flex flex-col-reverse sm:flex-row flex-wrap justify-center gap-20 mb-24 content-center"
     >
-      <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
+      <div className="sm:w-2/5 flex flex-col justify-center sm:gap-4">
         <div className="font-bold text-center text-sm  mb-2 gap-2 flex flex-col">
-          <div>Stakeholder Requirements Retrieval for Fresh Graduates</div>
+          <div className="mb-3">
+            Stakeholder Requirements Retrieval for Fresh Graduates
+          </div>
           <div className="py-1 px-4 rounded-xl bg-blue-300 mx-1 font-semibold">
             10 People Team
           </div>
