@@ -5,6 +5,7 @@ import Socialize from "./projects/Socialize";
 import Vote from "./projects/Vote";
 import Thriftnstash from "./projects/Thriftnstash";
 import TypingTest from "./projects/TypingTest";
+import Seareq from "./projects/Seareq";
 
 const Portofolio = () => {
   const windowWidth = useRef(window.innerWidth);
@@ -32,6 +33,7 @@ const Portofolio = () => {
             Projects
           </div>
         </div>
+        <Seareq windowWidth={windowWidth} />
         <Thriftnstash windowWidth={windowWidth} />
       </div>
     </div>

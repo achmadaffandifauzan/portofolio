@@ -102,9 +102,24 @@ const Thriftnstash = ({ windowWidth }) => {
       </div>
 
       <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
-        <div className="font-bold text-center text-sm  mb-2">
-          THRIFT & STASH
+        <div className="font-bold text-center text-sm  mb-2 gap-2 flex flex-col">
+          <div>THRIFT & STASH</div>
+          <div className=" py-1 px-4 rounded-xl bg-blue-300 mx-1 font-semibold">
+            2 People Team
+          </div>
+          <div className="py-2  rounded-3xl  bg-[#87f8dc3b] text-black font-semibold text-[13px] flex flex-col flex-wrap justify-center items-center">
+            <div className=" pb-1.5">Role</div>
+            <div className="flex flex-row flex-wrap justify-center items-center">
+              <span className="py-1 px-4 rounded-xl bg-[#87f8dc] mx-1 ">
+                Full Stack
+              </span>
+              <span className="py-1 px-4 rounded-xl bg-[#87f8dc] mx-1 ">
+                Project Manager
+              </span>
+            </div>
+          </div>
         </div>
+
         <div className="text-center text-gray-700 ">
           An online thrift shopping platform, powered by Laravel and MySQL,
           which follows the MVC architectural pattern and provides a seamless,
@@ -113,7 +128,7 @@ const Thriftnstash = ({ windowWidth }) => {
         </div>
         <div className="text-sm flex flex-row flex-wrap justify-around font-bold my-4">
           <div className="mx-4 my-1 flex gap-2 ">
-            <span className="self-center">MySql</span>{" "}
+            <span className="self-center">MySQL</span>{" "}
             <img
               src="/logo/mysql.svg"
               className="w-6 h-fit self-center"
@@ -155,18 +170,6 @@ const Thriftnstash = ({ windowWidth }) => {
             <span className="self-center">Code</span>
             <img
               src="/logo/github.svg"
-              className="w-5 h-fit self-center"
-              alt=""
-            />
-          </a>
-          <a
-            target="_blank"
-            className="flex gap-2"
-            href="https://thriftnstash.affandif.com/"
-          >
-            <span className="self-center">Live Demo</span>
-            <img
-              src="/logo/new-window.svg"
               className="w-5 h-fit self-center"
               alt=""
             />

@@ -3,11 +3,11 @@ import LoadingAnimation from "../LoadingAnimation";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-const TypingTest = ({ windowWidth }) => {
+const Seareq = ({ windowWidth }) => {
   const [loadingPNG, setLoadingPNG] = useState(true);
   const [loadingGIF, setLoadingGIF] = useState(true);
-  const imageSrc = "projects/typingtest.webp";
-  const animationSrc = "projects/typingtest_animate.webp";
+  const imageSrc = "projects/seareq.webp";
+  const animationSrc = "projects/seareq_animate.webp";
   useEffect(() => {
     const image = new Image();
     image.src = imageSrc;
@@ -32,40 +32,52 @@ const TypingTest = ({ windowWidth }) => {
       className="flex flex-col-reverse sm:flex-row flex-wrap justify-center gap-20 mb-24 content-center"
     >
       <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
-        <div className="font-bold text-center text-sm  mb-2">TYPING-TEST</div>
+        <div className="font-bold text-center text-sm  mb-2 gap-2 flex flex-col">
+          <div>Stakeholder Requirements Retrieval for Fresh Graduates</div>
+          <div className="py-1 px-4 rounded-xl bg-blue-300 mx-1 font-semibold">
+            10 People Team
+          </div>
+          <div className="py-2  rounded-3xl  bg-[#87f8dc3b] text-black font-semibold text-[13px] flex flex-col flex-wrap justify-center items-center">
+            <div className=" pb-1.5">Role</div>
+            <div className="flex flex-row flex-wrap justify-center items-center">
+              <span className="py-1 px-4 rounded-xl bg-[#87f8dc] mx-1 ">
+                Back-end
+              </span>
+              <span className="py-1 px-4 rounded-xl bg-[#87f8dc] mx-1 ">
+                Project Manager
+              </span>
+              <span className="py-1 px-4 rounded-xl bg-[#87f8dc] mx-1 ">
+                Scrum Master
+              </span>
+            </div>
+          </div>
+        </div>
+
         <div className="text-center text-gray-700 ">
-          Interactive web application for testing typing speed and accuracy,
-          built with NEXT.JS and featuring a collection of cool quotes.
+          A web-based platform powered by Django and MySQL. A platform to
+          extract the skills and requirements for fresh graduates to secure jobs
+          in fast-paced, rapidly changing industries. Getting the raw data from
+          Kalibrr and RapidAPI.
+        </div>
+        <div className="text-center text-gray-700 ">
+          Utilizing natural language processing methods in machine learning,
+          such as Term Frequency-Inverse Document Frequency (TF-IDF), POS
+          Tagging, Lemmatization, Stopword removal, Tokenizing, and also
+          leveraging the Wikipedia API to validate the terms.
         </div>
         <div className="text-sm flex flex-row flex-wrap justify-around font-bold my-4">
+          <div className="mx-4 my-1 flex gap-2 ">
+            <span className="self-center">Django</span>{" "}
+            <img
+              src="/logo/django.svg"
+              className="w-5 h-fit self-center"
+              alt=""
+            />
+          </div>
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">MySQL</span>{" "}
             <img
               src="/logo/mysql.svg"
-              className="w-6 h-fit self-center"
-              alt=""
-            />
-          </div>
-          <div className="mx-4 my-1 flex gap-2 ">
-            <span className="self-center">NEXT.JS</span>{" "}
-            <img
-              src="/logo/nextjs.svg"
-              className="w-6 h-fit self-center"
-              alt=""
-            />
-          </div>
-          <div className="mx-4 my-1 flex gap-2 ">
-            <span className="self-center">Prisma</span>{" "}
-            <img
-              src="/logo/prisma.svg"
-              className="w-6 h-fit self-center"
-              alt=""
-            />
-          </div>
-          <div className="mx-4 my-1 flex gap-2 ">
-            <span className="self-center">NodeJS</span>{" "}
-            <img
-              src="/logo/nodejs.svg"
               className="w-6 h-fit self-center"
               alt=""
             />
@@ -82,24 +94,12 @@ const TypingTest = ({ windowWidth }) => {
         <div className="flex flex-row flex-wrap gap-12 justify-center font-semibold">
           <a
             target="_blank"
-            href="https://github.com/achmadaffandifauzan/typing-test"
+            href="https://github.com/AgileRE-2023/stakeholder-requirement-retriever"
             className="flex gap-2"
           >
             <span className="self-center">Code</span>
             <img
               src="/logo/github.svg"
-              className="w-5 h-fit self-center"
-              alt=""
-            />
-          </a>
-          <a
-            target="_blank"
-            className="flex gap-2"
-            href="https://type.affandif.com"
-          >
-            <span className="self-center">Live Demo</span>
-            <img
-              src="/logo/new-window.svg"
               className="w-5 h-fit self-center"
               alt=""
             />
@@ -144,7 +144,7 @@ const TypingTest = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <LazyLoadImage effect="blur" src={"projects/typingtest.webp"} />
+            <LazyLoadImage effect="blur" src={"projects/seareq.webp"} />
           )}
         </div>
         <div
@@ -159,7 +159,7 @@ const TypingTest = ({ windowWidth }) => {
               <LoadingAnimation />
             </>
           ) : (
-            <LazyLoadImage src={"projects/typingtest_animate.webp"} />
+            <LazyLoadImage src={"projects/seareq_animate.webp"} />
           )}
         </div>
         <button
@@ -180,4 +180,4 @@ const TypingTest = ({ windowWidth }) => {
   );
 };
 
-export default TypingTest;
+export default Seareq;

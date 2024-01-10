@@ -14,7 +14,7 @@ const About = () => {
           className="rounded-xl h-fit transition-all duration-300"
         />
       </div>
-      <div className="sm:w-2/5 ">
+      <div className="sm:w-2/5 flex sm:flex-row flex-wrap sm:justify-between">
         <div className="text-blue-500 font-extrabold text-xs mb-2 tracking-wider">
           ABOUT ME
         </div>
