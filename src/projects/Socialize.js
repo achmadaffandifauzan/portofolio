@@ -28,11 +28,11 @@ const Socialize = ({ windowWidth }) => {
   }, [animationSrc, loadingImage]);
   return (
     <div
-      id="project_1"
+      id="project_socialize"
       className="flex flex-row flex-wrap justify-center gap-20 mb-24 content-center "
     >
       <div
-        id="previewProject-socialize"
+        id="previewProject_socialize"
         className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative transition-all duration-300"
         onMouseEnter={(e) => {
           if (windowWidth.current >= 640) {

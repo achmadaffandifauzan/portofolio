@@ -29,7 +29,7 @@ const Seacinema = ({ windowWidth }) => {
 
   return (
     <div
-      id="project_4"
+      id="project_seacinema"
       className="flex flex-col-reverse sm:flex-row flex-wrap justify-center gap-20 mb-24 content-center"
     >
       <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
@@ -110,7 +110,7 @@ const Seacinema = ({ windowWidth }) => {
       </div>
 
       <div
-        id="previewProject-sea-cinema"
+        id="previewProject_seacinema"
         className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
         onMouseEnter={(e) => {
           if (windowWidth.current >= 640) {

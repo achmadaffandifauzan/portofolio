@@ -28,11 +28,11 @@ const Thriftnstash = ({ windowWidth }) => {
   }, [animationSrc, loadingImage]);
   return (
     <div
-      id="project_5"
+      id="project_thriftnstash"
       className="flex flex-row flex-wrap justify-center gap-20 content-center"
     >
       <div
-        id="previewProject-thriftnstash"
+        id="previewProject_thriftnstash"
         className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative transition-all duration-300"
         onMouseEnter={(e) => {
           if (windowWidth.current >= 640) {

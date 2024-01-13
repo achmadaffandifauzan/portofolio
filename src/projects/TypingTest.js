@@ -28,7 +28,7 @@ const TypingTest = ({ windowWidth }) => {
   }, [animationSrc, loadingPNG]);
   return (
     <div
-      id="project_2"
+      id="project_typingtest"
       className="flex flex-col-reverse sm:flex-row flex-wrap justify-center gap-20 mb-24 content-center"
     >
       <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
@@ -108,7 +108,7 @@ const TypingTest = ({ windowWidth }) => {
       </div>
 
       <div
-        id="previewProject-vote"
+        id="previewProject_typingtest"
         className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative transition-all duration-300"
         onMouseEnter={(e) => {
           if (windowWidth.current >= 640) {

@@ -29,11 +29,11 @@ const Eztes = ({ windowWidth }) => {
 
   return (
     <div
-      id="project_3"
+      id="project_eztes"
       className="flex flex-row flex-wrap justify-center gap-20 mb-24 content-center"
     >
       <div
-        id="previewProject-eztes"
+        id="previewProject_eztes"
         className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative transition-all duration-300"
         onMouseEnter={(e) => {
           if (windowWidth.current >= 640) {

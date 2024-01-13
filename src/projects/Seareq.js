@@ -110,7 +110,7 @@ const Seareq = ({ windowWidth }) => {
       </div>
 
       <div
-        id="previewProject-vote"
+        id="previewProject_seareq"
         className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative transition-all duration-300"
         onMouseEnter={(e) => {
           if (windowWidth.current >= 640) {
@@ -151,7 +151,7 @@ const Seareq = ({ windowWidth }) => {
         </div>
         <div
           id="preview-gif"
-          className="opacity-0 absolute top-1/4 self-center transition-all duration-300"
+          className="opacity-0 absolute max-sm:top-[-20px] self-center transition-all duration-300"
         >
           {loadingGIF ? (
             <>
