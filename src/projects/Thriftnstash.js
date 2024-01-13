@@ -29,7 +29,7 @@ const Thriftnstash = ({ windowWidth }) => {
   return (
     <div
       id="project_thriftnstash"
-      className="flex flex-row flex-wrap justify-center gap-20 content-center"
+      className="flex flex-row flex-wrap justify-center gap-20 mb-32 content-center"
     >
       <div
         id="previewProject_thriftnstash"

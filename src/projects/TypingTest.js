@@ -29,7 +29,7 @@ const TypingTest = ({ windowWidth }) => {
   return (
     <div
       id="project_typingtest"
-      className="flex flex-col-reverse sm:flex-row flex-wrap justify-center gap-20 mb-24 content-center"
+      className="flex flex-col-reverse sm:flex-row flex-wrap justify-center gap-20 mb-32 content-center"
     >
       <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
         <div className="font-bold text-center text-sm  mb-2">TYPING-TEST</div>

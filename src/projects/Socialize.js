@@ -29,7 +29,7 @@ const Socialize = ({ windowWidth }) => {
   return (
     <div
       id="project_socialize"
-      className="flex flex-row flex-wrap justify-center gap-20 mb-24 content-center "
+      className="flex flex-row flex-wrap justify-center gap-20 mb-32 content-center "
     >
       <div
         id="previewProject_socialize"
