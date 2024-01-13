@@ -165,7 +165,7 @@ const Seareq = ({ windowWidth }) => {
           )}
         </div>
         <button
-          className="justify-self-center block sm:hidden self-center px-3 py-1 bg-blue-600 text-white text-sm text-center rounded-lg"
+          className="justify-self-center block sm:hidden self-center px-5 py-1.5 bg-indigo-500 active:ring-4 text-white text-sm text-center rounded-lg"
           onClick={(e) => {
             e.currentTarget.parentElement
               .querySelector("#preview-gif")

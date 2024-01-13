@@ -74,7 +74,7 @@ const Eztes = ({ windowWidth }) => {
         </div>
         <div
           id="preview-gif"
-          className="opacity-0 absolute top-1/4 self-center transition-all duration-300"
+          className="opacity-0 absolute self-center transition-all duration-300"
         >
           {loadingGIF ? (
             <>
@@ -88,7 +88,7 @@ const Eztes = ({ windowWidth }) => {
           )}
         </div>
         <button
-          className="justify-self-center block sm:hidden self-center px-3 py-1 bg-blue-600 text-white text-sm text-center rounded-lg"
+          className="justify-self-center block sm:hidden self-center px-5 py-1.5 bg-indigo-500 active:ring-4 text-white text-sm text-center rounded-lg"
           onClick={(e) => {
             if (loadingImage == false) {
               e.currentTarget.parentElement
