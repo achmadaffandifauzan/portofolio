@@ -37,7 +37,7 @@ const Vote = ({ windowWidth }) => {
           VOTE-TIME-ACTIVITY
         </div>
         <div className="text-center text-gray-700 ">
-          MERN (MongoDB, Express, React, Node.js) stack interactive web
+          MERN (MongoDB, Express, React, Node.js) stack interactive RESTful web
           application for creating and managing votes of event dates, with
           tracking and analysis of the vote results.
         </div>

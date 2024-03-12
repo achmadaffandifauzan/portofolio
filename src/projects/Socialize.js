@@ -106,7 +106,7 @@ const Socialize = ({ windowWidth }) => {
         <div className="text-center text-gray-700 ">
           Social Media Platform, Powered by Node.js and built upon the Express
           framework, with real time chatting feature using Socket.io and
-          React.js
+          React.js in a RESTful manner
         </div>
         <div className="text-sm flex flex-row flex-wrap justify-around font-bold my-4">
           <div className="mx-4 my-1 flex gap-2 ">

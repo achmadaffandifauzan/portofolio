@@ -121,10 +121,10 @@ const Thriftnstash = ({ windowWidth }) => {
         </div>
 
         <div className="text-center text-gray-700 ">
-          An online thrift shopping platform, powered by Laravel and MySQL,
-          which follows the MVC architectural pattern and provides a seamless,
-          transaction-free experience for users to discover a wide range of
-          sustainable products at affordable prices.
+          An online thrift shopping platform, powered by Laravel and MySQL, with
+          a RESTful implementation that follows the MVC architectural pattern
+          and provides a seamless, transaction-free experience for users to
+          discover a wide range of sustainable products at affordable prices.
         </div>
         <div className="text-sm flex flex-row flex-wrap justify-around font-bold my-4">
           <div className="mx-4 my-1 flex gap-2 ">
