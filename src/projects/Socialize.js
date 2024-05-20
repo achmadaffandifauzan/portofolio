@@ -106,7 +106,7 @@ const Socialize = ({ windowWidth }) => {
         <div className="text-center text-gray-700 ">
           Social Media Platform, Powered by Node.js and built upon the Express
           framework, with real time chatting feature using Socket.io and
-          React.js in a RESTful manner
+          React.js in a RESTful manner.
         </div>
         <div className="text-sm flex flex-row flex-wrap justify-around font-bold my-4">
           <div className="mx-4 my-1 flex gap-2 ">
@@ -181,13 +181,13 @@ const Socialize = ({ windowWidth }) => {
           </a>
           <a
             target="_blank"
-            className="flex gap-2"
+            className="flex gap-2 hover:bg-[#87f7db] bg-indigo-300  transition-all px-5 py-1 rounded-xl"
             href="https://socialize.affandif.com"
           >
             <span className="self-center">Live Demo</span>
             <img
               src="/logo/new-window.svg"
-              className="w-5 h-fit self-center"
+              className="w-4 h-fit self-center"
               alt=""
             />
           </a>

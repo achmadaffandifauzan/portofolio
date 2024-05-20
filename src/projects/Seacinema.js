@@ -35,6 +35,7 @@ const Seacinema = ({ windowWidth }) => {
       <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
         <div className="font-bold text-center text-sm  mb-2">SEA-CINEMA</div>
         <div className="text-center text-gray-700 ">
+          {/* restful since it only stores session in server as authentication purposes */}
           Simple movie ticket booking website, powered by Node.js. This RESTful
           web application follows the MVC architectural pattern and is built
           using the Express framework.
@@ -96,13 +97,13 @@ const Seacinema = ({ windowWidth }) => {
           </a>
           <a
             target="_blank"
-            className="flex gap-2"
+            className="flex gap-2 hover:bg-[#87f7db] bg-indigo-300  transition-all px-5 py-1 rounded-xl"
             href="https://seacinema.affandif.com/"
           >
             <span className="self-center">Live Demo</span>
             <img
               src="/logo/new-window.svg"
-              className="w-5 h-fit self-center"
+              className="w-4 h-fit self-center"
               alt=""
             />
           </a>

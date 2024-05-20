@@ -121,6 +121,7 @@ const Thriftnstash = ({ windowWidth }) => {
         </div>
 
         <div className="text-center text-gray-700 ">
+          {/* restful since it only stores session in server as authentication purposes */}
           An online thrift shopping platform, powered by Laravel and MySQL, with
           a RESTful implementation that follows the MVC architectural pattern
           and provides a seamless, transaction-free experience for users to

@@ -17,7 +17,7 @@ const Portofolio = () => {
             PORTOFOLIO
           </div>
           <div className="sm:text-2xl tracking-wider font-semibold">
-            <span className="font-bold">Full Stack Projects</span>
+            <span className="font-bold">Full Stack Open Source Projects</span>
           </div>
         </div>
         <TypingTest windowWidth={windowWidth} />

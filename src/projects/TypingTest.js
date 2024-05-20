@@ -94,13 +94,13 @@ const TypingTest = ({ windowWidth }) => {
           </a>
           <a
             target="_blank"
-            className="flex gap-2"
+            className="flex gap-2 hover:bg-[#87f7db] bg-indigo-300  transition-all px-5 py-1 rounded-xl"
             href="https://type.affandif.com"
           >
             <span className="self-center">Live Demo</span>
             <img
               src="/logo/new-window.svg"
-              className="w-5 h-fit self-center"
+              className="w-4 h-fit self-center"
               alt=""
             />
           </a>
