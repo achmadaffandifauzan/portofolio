@@ -180,7 +180,7 @@ const Eztes = ({ windowWidth }) => {
             className="flex gap-2 hover:bg-[#87f7db] bg-indigo-300  transition-all px-5 py-1 rounded-xl"
             href="https://eztes.affandif.com/"
           >
-            <span className="self-center">Live Demo</span>
+            <span className="self-center">Visit Website</span>
             <img
               src="/logo/new-window.svg"
               className="w-4 h-fit self-center"
