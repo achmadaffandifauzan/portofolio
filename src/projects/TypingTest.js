@@ -55,6 +55,14 @@ const TypingTest = ({ windowWidth }) => {
             />
           </div>
           <div className="mx-4 my-1 flex gap-2 ">
+            <span className="self-center">Redux</span>{" "}
+            <img
+              src="/logo/redux.svg"
+              className="w-6 h-fit self-center"
+              alt=""
+            />
+          </div>
+          <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">Prisma</span>{" "}
             <img
               src="/logo/prisma.svg"
