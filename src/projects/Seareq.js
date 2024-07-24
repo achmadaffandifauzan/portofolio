@@ -37,19 +37,16 @@ const Seareq = ({ windowWidth }) => {
             Stakeholder Requirements Retrieval for Fresh Graduates
           </div>
           <div className="py-1 px-4 rounded-xl bg-blue-300 mx-1 font-semibold">
-            10 People Team
+            10-Member Team
           </div>
           <div className="py-2  rounded-3xl  bg-[#87f8dc3b] text-black font-semibold text-[13px] flex flex-col flex-wrap justify-center items-center">
-            <div className=" pb-1.5">Role</div>
+            <div className=" pb-1.5">My Role</div>
             <div className="flex flex-row flex-wrap justify-center items-center">
               <span className="py-1 px-4 rounded-xl bg-[#87f8dc] mx-1 ">
-                Back-end
+                Backend Developer
               </span>
               <span className="py-1 px-4 rounded-xl bg-[#87f8dc] mx-1 ">
                 Project Manager
-              </span>
-              <span className="py-1 px-4 rounded-xl bg-[#87f8dc] mx-1 ">
-                Scrum Master
               </span>
             </div>
           </div>

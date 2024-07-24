@@ -105,13 +105,13 @@ const Thriftnstash = ({ windowWidth }) => {
         <div className="font-bold text-center text-sm  mb-2 gap-2 flex flex-col">
           <div className="mb-3">THRIFT & STASH</div>
           <div className=" py-1 px-4 rounded-xl bg-blue-300 mx-1 font-semibold">
-            2 People Team
+            2-Member Team
           </div>
           <div className="py-2  rounded-3xl  bg-[#87f8dc3b] text-black font-semibold text-[13px] flex flex-col flex-wrap justify-center items-center">
-            <div className=" pb-1.5">Role</div>
+            <div className=" pb-1.5">My Role</div>
             <div className="flex flex-row flex-wrap justify-center items-center">
               <span className="py-1 px-4 rounded-xl bg-[#87f8dc] mx-1 ">
-                Full Stack
+                Full-Stack Developer
               </span>
               <span className="py-1 px-4 rounded-xl bg-[#87f8dc] mx-1 ">
                 Project Manager

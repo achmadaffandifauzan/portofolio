@@ -1,7 +1,8 @@
 import Navbar from "./Navbar";
 import Home from "./Home";
 import About from "./About";
-import Portofolio from "./Portofolio";
+import Experiences from "./experiences/Index";
+import Projects from "./projects/Index";
 import Contact from "./Contact";
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
       <div className="container mx-auto max-sm:mt-14">
         <Home />
         <About />
-        <Portofolio />
+        <Experiences />
+        <Projects />
         <Contact />
       </div>
     </div>
