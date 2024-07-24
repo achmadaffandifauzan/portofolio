@@ -27,15 +27,19 @@ const Bangkit = () => {
         </div>
         <div className="text-justify">
           Bangkit is a career readiness initiative led by Google and supported
-          by industry experts from Gojek and GoTo, I am undergoing comprehensive
-          training in Cloud Computing. This program offers firsthand exposure to
-          real-world practitioners and equips us with skills for successful tech
-          careers. In this academy, My roles in my team's capstone project are
-          as a project manager, backend engineer, and cloud engineer.
+          by industry experts from Gojek and GoTo that offers firsthand exposure
+          to real-world practitioners and equips me with skills for successful
+          tech careers. In this academy, My roles in my team's capstone project
+          are as a <span className="font-semibold">project manager</span>,{" "}
+          <span className="font-semibold">backend development</span>, and{" "}
+          <span className="font-semibold">cloud engineer</span>. My capstone
+          project team reached the{" "}
+          <span className="font-semibold">top 50 out of 590 teams</span> in the
+          capstone product track project in Bangkit Academy, batch 1, 2024.
         </div>
         <div className="flex flex-row max-sm:justify-center flex-wrap gap-2 my-2 tracking-normal">
           <div className="bg-[#87f8dc] px-4 pb-0.5 rounded-full text-sm ">
-            Backend Web Development
+            Backend Development
           </div>
           <div className="bg-[#87f8dc] px-4 pb-0.5 rounded-full text-sm ">
             Cloud Computing

@@ -15,8 +15,8 @@ const Freelance = () => {
           </div>
         </div>
         <div className="text-justify">
-          Developed a comprehensive web application for my clients using this
-          tech stacks:
+          I have developed a comprehensive web application for my clients using
+          the following tech stack:
           <div className="flex flex-row max-sm:justify-center flex-wrap gap-5 my-2 tracking-normal">
             <img
               src="/logo/nodejs-full.svg"
