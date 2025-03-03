@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import Bangkit from "./Bangkit";
 import Freelance from "./Freelance";
+import Thrive from "./Thrive";
+import Sampoerna from "./Sampoerna";
 const Experiences = () => {
   const windowWidth = useRef(window.innerWidth);
 
@@ -11,8 +13,10 @@ const Experiences = () => {
           Experiences
         </div>
         <div className="flex flex-col gap-10 max-sm:gap-24">
-          <Bangkit />
+          <Sampoerna />
+          <Thrive />
           <Freelance />
+          <Bangkit />
         </div>
       </div>
     </div>

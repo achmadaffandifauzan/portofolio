@@ -8,7 +8,7 @@ const Bangkit = () => {
           February 2024 - July 2024
         </div>
       </div>
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-4">
         <div className="flex flex-row max-sm:flex-col max-sm:text-center gap-2 tracking-normal text-lg">
           <div className="text-indigo-700 font-bold">
             Cloud Computing Cohort
@@ -25,6 +25,24 @@ const Bangkit = () => {
             <img src="/logo/new-window.svg" className="w-3" alt="" />
           </a>
         </div>
+        <div className="flex flex-row max-sm:justify-center flex-wrap gap-2 mb-2 tracking-normal">
+          <div className="bg-[#87f8dc] px-4 pb-0.5 rounded-full text-sm ">
+            Backend Development
+          </div>
+          <div className="bg-[#87f8dc] px-4 pb-0.5 rounded-full text-sm ">
+            Cloud Computing
+          </div>
+          <div className="bg-[#87f8dc] px-4 pb-0.5 rounded-full text-sm ">
+            Project Management
+          </div>
+        </div>
+        <div className="flex flex-row flex-wrap max-sm:justify-center gap-10">
+          <img
+            src="/projects/scholarseeks.webp"
+            className="w-[200px] rounded-md ring ring-[#00adb54d] transition-all duration-300 ease-in-out hover:scale-150 hover:shadow-2xl hover:ring-[#fff0]"
+            alt=""
+          />
+        </div>
         <div className="text-justify">
           Bangkit is a career readiness initiative led by Google and supported
           by industry experts from Gojek and GoTo that offers firsthand exposure
@@ -37,16 +55,10 @@ const Bangkit = () => {
           <span className="font-semibold">top 50 out of 590 teams</span> in the
           capstone product track project in Bangkit Academy, batch 1, 2024.
         </div>
-        <div className="flex flex-row max-sm:justify-center flex-wrap gap-2 my-2 tracking-normal">
-          <div className="bg-[#87f8dc] px-4 pb-0.5 rounded-full text-sm ">
-            Backend Development
-          </div>
-          <div className="bg-[#87f8dc] px-4 pb-0.5 rounded-full text-sm ">
-            Cloud Computing
-          </div>
-          <div className="bg-[#87f8dc] px-4 pb-0.5 rounded-full text-sm ">
-            Project Management
-          </div>
+        <div className="flex flex-row max-sm:justify-center items-center flex-wrap gap-5 mt-5 mb-2 tracking-normal">
+          <img src="/logo/flask.svg" className="h-7" alt="" />
+          <img src="/logo/docker.svg" className="h-7" alt="" />
+          <img src="/logo/gcloud.svg" className="h-7" alt="" />
         </div>
       </div>
     </div>

@@ -131,7 +131,11 @@ const ScholarSeeks = ({ windowWidth }) => {
           </div>
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">Google Cloud Platform</span>{" "}
-            <img src="/logo/gcp.svg" className="w-6 h-fit self-center" alt="" />
+            <img
+              src="/logo/gcloud.svg"
+              className="w-6 h-fit self-center"
+              alt=""
+            />
           </div>
         </div>
 

@@ -24,8 +24,8 @@ const Projects = () => {
         <TypingTest windowWidth={windowWidth} />
         <Socialize windowWidth={windowWidth} />
         <Vote windowWidth={windowWidth} />
-        <Eztes windowWidth={windowWidth} />
-        <Seacinema windowWidth={windowWidth} />
+        {/* <Eztes windowWidth={windowWidth} />
+        <Seacinema windowWidth={windowWidth} /> */}
       </div>
       <div className="flex flex-col justify-center content-center gap-20 mt-16 tracking-tight px-5 sm:px-20">
         <div className="text-center">
@@ -37,7 +37,7 @@ const Projects = () => {
         </div>
         <ScholarSeeks windowWidth={windowWidth} />
         <Seareq windowWidth={windowWidth} />
-        <Thriftnstash windowWidth={windowWidth} />
+        {/* <Thriftnstash windowWidth={windowWidth} /> */}
       </div>
     </div>
   );
