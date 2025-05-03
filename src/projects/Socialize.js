@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 import LoadingAnimation from "../LoadingAnimation";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { GreenTag } from "../components/Tags";
 
 const Socialize = ({ windowWidth }) => {
   const [loadingImage, setLoadingImage] = useState(true);
@@ -102,7 +103,16 @@ const Socialize = ({ windowWidth }) => {
       </div>
 
       <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
-        <div className="font-bold text-center text-sm  mb-2">SOCIALIZE</div>
+        <div className="mb-3 flex flex-row flex-wrap justify-center items-center gap-2">
+          <div className="font-bold text-center text-lg leading-4">
+            SOCIALIZE
+          </div>
+          <div className="flex flex-row flex-wrap justify-center items-center gap-2">
+            <GreenTag text={"SOLO"} />
+            <GreenTag text={"WEB"} />
+            <GreenTag text={"OPEN SOURCE"} />
+          </div>
+        </div>
         <div className="text-center text-gray-700 ">
           Social Media Platform, Powered by Node.js and built upon the Express
           framework, with real time chatting feature using Socket.io and

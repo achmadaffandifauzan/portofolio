@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 import LoadingAnimation from "../LoadingAnimation";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { GreenTag } from "../components/Tags";
 
 const Vote = ({ windowWidth }) => {
   const [loadingPNG, setLoadingPNG] = useState(true);
@@ -33,8 +34,15 @@ const Vote = ({ windowWidth }) => {
       className="flex flex-col-reverse sm:flex-row flex-wrap justify-center gap-20 mb-32 content-center"
     >
       <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
-        <div className="font-bold text-center text-sm  mb-2">
-          VOTE-TIME-ACTIVITY
+        <div className="mb-3 flex flex-row flex-wrap justify-center items-center gap-2">
+          <div className="font-bold text-center text-lg leading-4">
+            VOTE-TIME-ACTIVITY
+          </div>
+          <div className="flex flex-row flex-wrap justify-center items-center gap-2">
+            <GreenTag text={"SOLO"} />
+            <GreenTag text={"WEB"} />
+            <GreenTag text={"OPEN SOURCE"} />
+          </div>
         </div>
         <div className="text-center text-gray-700 ">
           {/* restful since it only stores session in server as authentication purposes */}

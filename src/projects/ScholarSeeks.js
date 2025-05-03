@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 import LoadingAnimation from "../LoadingAnimation";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { GreenTag } from "../components/Tags";
 
 const ScholarSeeks = ({ windowWidth }) => {
   const [loadingImage, setLoadingImage] = useState(true);
@@ -43,8 +44,17 @@ const ScholarSeeks = ({ windowWidth }) => {
 
       <div className="sm:w-2/5 flex flex-col justify-center sm:gap-4">
         <div className="font-bold text-center text-sm  mb-2 gap-2 flex flex-col">
-          <div className="mb-3">SCHOLARSEEKS</div>
-          <div className=" py-1 px-4 rounded-xl bg-blue-300 mx-1 font-semibold">
+          <div className="mb-3 flex flex-row flex-wrap justify-center items-center gap-2">
+            <div className="font-bold text-center text-lg leading-4">
+              SCHOLARSEEKS
+            </div>
+            <div className="flex flex-row flex-wrap justify-center items-center gap-2">
+              <GreenTag text={"TEAM"} />
+              <GreenTag text={"MOBILE"} />
+              <GreenTag text={"OPEN SOURCE"} />
+            </div>
+          </div>
+          <div className=" py-1 px-4 rounded-xl bg-indigo-300 mx-1 font-semibold">
             7-Member Team
           </div>
           <div className="py-2  rounded-3xl  bg-[#87f8dc3b] text-black font-semibold text-[13px] flex flex-col flex-wrap justify-center items-center">

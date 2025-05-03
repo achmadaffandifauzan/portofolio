@@ -9,36 +9,16 @@ const Navbar = () => {
         alt=""
       />
       <div className="flex max-sm:w-full max-sm:justify-around text-black text-sm max-sm:uppercase max-sm:text-xs font-bold sm:gap-4 sm:tracking-widest tracking-wider">
-        <Link
-          to="about-page"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer"
-        >
+        <Link to="about-page" duration={500} className="cursor-pointer">
           About
         </Link>
-        <Link
-          to="experiences-page"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer"
-        >
+        <Link to="experiences-page" duration={500} className="cursor-pointer">
           Experiences
         </Link>
-        <Link
-          to="projects-page"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer"
-        >
+        <Link to="projects-page" duration={500} className="cursor-pointer">
           Projects
         </Link>
-        <Link
-          to="contact-page"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer"
-        >
+        <Link to="contact-page" duration={500} className="cursor-pointer">
           Contact
         </Link>
       </div>
