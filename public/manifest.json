@@ -1,6 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Affandi",
+  "name": "Affandi Portfolio",
+  "description": "A portfolio website for Affandi, a software engineer.",
+  "dir": "ltr",
+  "lang": "en-US",
   "icons": [
     {
       "src": "favicon.ico",
