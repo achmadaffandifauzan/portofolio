@@ -42,18 +42,36 @@ const Sampoerna = () => {
           />
         </div>
         <div className="text-justify">
-          <div className="flex flex-row flex-wrap">
-            Contributed to the development and enhancement of
+          <div className="leading-6 mb-2">
+            Contributed to the development and enhancement of&nbsp;
             <a
               href="https://www.src.id/en/"
               target="_blank"
-              className="font-semibold flex flex-row flex-wrap"
+              className="font-semibold text-blue-600 inline-flex items-center"
             >
-              &nbsp;SRC AYO Ecosystem&nbsp;
-              <img src="/logo/new-window.svg" className="w-3" alt="" />
+              SRC AYO Ecosystem
+              <img src="/logo/new-window.svg" className="w-3 ml-1" alt="" />
             </a>
-            &nbsp; Apps (React Native)
+            &nbsp;—a large-scale digital commercial platform serving hundreds of
+            thousands of active retailers and wholesalers across multiple
+            countries.
           </div>
+          <ul className="flex flex-col gap-2 list-disc ms-4">
+            <li className="leading-6">
+              Completed 23 Jira tickets to date, including features and fixes
+              for both B2B and B2C mobile apps (React Native), as well as
+              automation for regression testing.
+            </li>
+            <li className="leading-6">
+              Estimated <span className="font-semibold">$11,900 USD</span> in
+              delivery value, based on internal cost-efficiency metrics.
+            </li>
+            <li className="leading-6">
+              Worked in an Agile/Scrum team alongside senior engineers and
+              product stakeholders to deliver production-ready code in a
+              complex, large-scale system.
+            </li>
+          </ul>
           <div className="flex flex-row max-sm:justify-center items-center flex-wrap gap-5 mt-5 mb-2 tracking-normal">
             <img src="/logo/nodejs-full.svg" className="h-7" alt="" />
             <img src="/logo/react.svg" className="h-7" alt="" />

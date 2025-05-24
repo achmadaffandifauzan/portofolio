@@ -35,22 +35,22 @@ const Thrive = () => {
         </div>
         <div className="text-justify">
           <div>
-            <div>
+            <div className="mb-2">
               Contributed to the development and enhancements of an ERP
               Accounting System:
             </div>
-            <div>
-              <div>
+            <ul className="flex flex-col gap-2 list-disc ms-4">
+              <li className="leading-6">
                 <span className="font-semibold">Frontend - </span>
                 Built interactive data visualizations using Recharts for React
                 JS.
-              </div>
-              <div>
+              </li>
+              <li className="leading-6">
                 <span className="font-semibold">Backend - </span> Build APIs to
                 integrate system with third-party financial services and
                 AI-driven Large Language Models (LLMs).
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
           <div className="flex flex-row max-sm:justify-center flex-wrap gap-5 mt-5 mb-2 tracking-normal">
             <img
