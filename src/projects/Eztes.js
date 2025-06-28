@@ -34,6 +34,8 @@ const Eztes = ({ windowWidth }) => {
     >
       <div
         id="previewProject_eztes"
+        data-aos="fade-right"
+        data-aos-duration="300"
         className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative transition-all duration-300"
         onMouseEnter={(e) => {
           if (windowWidth.current >= 640) {
@@ -111,7 +113,11 @@ const Eztes = ({ windowWidth }) => {
         </button>
       </div>
 
-      <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="300"
+        className="sm:w-2/5 flex flex-col justify-center sm:gap-8"
+      >
         <div className="font-bold text-center text-sm  mb-2">EZTES</div>
         <div className="text-center text-gray-700 ">
           {/* restful since it only stores session in server as authentication purposes */}

@@ -33,7 +33,11 @@ const Vote = ({ windowWidth }) => {
       id="project_vote"
       className="flex flex-col-reverse sm:flex-row flex-wrap justify-center gap-20 mb-32 content-center"
     >
-      <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="300"
+        className="sm:w-2/5 flex flex-col justify-center sm:gap-8"
+      >
         <div className="mb-3 flex flex-row flex-wrap justify-center items-center gap-2">
           <div className="font-bold text-center text-lg leading-4">
             VOTE-TIME-ACTIVITY
@@ -122,6 +126,8 @@ const Vote = ({ windowWidth }) => {
 
       <div
         id="previewProject_vote"
+        data-aos="fade-left"
+        data-aos-duration="300"
         className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative transition-all duration-300"
         onMouseEnter={(e) => {
           if (windowWidth.current >= 640) {

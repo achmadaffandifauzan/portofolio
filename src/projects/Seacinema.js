@@ -32,7 +32,11 @@ const Seacinema = ({ windowWidth }) => {
       id="project_seacinema"
       className="flex flex-col-reverse sm:flex-row flex-wrap justify-center gap-20 mb-32 content-center"
     >
-      <div className="sm:w-2/5 flex flex-col justify-center sm:gap-8">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="300"
+        className="sm:w-2/5 flex flex-col justify-center sm:gap-8"
+      >
         <div className="font-bold text-center text-sm  mb-2">SEA-CINEMA</div>
         <div className="text-center text-gray-700 ">
           {/* restful since it only stores session in server as authentication purposes */}
@@ -112,6 +116,8 @@ const Seacinema = ({ windowWidth }) => {
 
       <div
         id="previewProject_seacinema"
+        data-aos="fade-left"
+        data-aos-duration="300"
         className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative"
         onMouseEnter={(e) => {
           if (windowWidth.current >= 640) {

@@ -3,6 +3,8 @@ const Contact = () => {
   return (
     <div
       id="contact-page"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
       className="flex flex-wrap flex-col h-screen justify-center px-5 sm:px-20 content-center "
     >
       <img src="socials.webp" className="w-56 self-center" alt="" />

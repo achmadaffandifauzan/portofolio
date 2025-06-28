@@ -4,7 +4,11 @@ const Thrive = () => {
   return (
     <div className="flex sm:flex-row flex-col max-sm:gap-3">
       <div className="flex min-w-[18rem] max-sm:justify-center ">
-        <div className="max-sm:bg-indigo-200 rounded-full pb-0.5 w-fit px-5">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="500"
+          className="max-sm:bg-indigo-200 rounded-full pb-0.5 w-fit px-5"
+        >
           December 2024 - January 2025
         </div>
       </div>
