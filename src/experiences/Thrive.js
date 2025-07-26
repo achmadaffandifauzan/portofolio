@@ -21,6 +21,7 @@ const Thrive = () => {
           <a
             href="https://www.thrive.co.id/company-profile"
             target="_blank"
+            rel="noreferrer"
             className="flex flex-row max-sm:self-center"
           >
             <div className="me-2">

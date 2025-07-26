@@ -21,6 +21,7 @@ const Bangkit = () => {
           <a
             href="https://grow.google/intl/id_id/bangkit/"
             target="_blank"
+            rel="noreferrer"
             className="flex flex-row max-sm:self-center"
           >
             <div className="me-2">

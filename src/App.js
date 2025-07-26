@@ -13,7 +13,7 @@ function App() {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div id="container">
+    <div id="container" className="overflow-x-hidden">
       <Navbar />
       <div className="container mx-auto max-sm:mt-14">
         <Home />

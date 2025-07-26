@@ -13,7 +13,7 @@ const About = () => {
         <img
           effect="blur"
           src={"stack.webp"}
-          className="rounded-xl h-fit transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-2xl"
+          className="rounded-xl  transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-2xl"
         />
       </div>
       <div className="sm:w-2/5 flex sm:flex-row flex-wrap sm:justify-between">

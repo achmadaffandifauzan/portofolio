@@ -39,7 +39,7 @@ const Socialize = ({ windowWidth }) => {
         className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative transition-all duration-300"
         onMouseEnter={(e) => {
           if (windowWidth.current >= 640) {
-            if (loadingImage == false) {
+            if (loadingImage === false) {
               e.currentTarget
                 .querySelector("#preview-gif")
                 .classList.toggle("opacity-0");
@@ -51,7 +51,7 @@ const Socialize = ({ windowWidth }) => {
         }}
         onMouseLeave={(e) => {
           if (windowWidth.current >= 640) {
-            if (loadingImage == false) {
+            if (loadingImage === false) {
               e.currentTarget
                 .querySelector("#preview-gif")
                 .classList.toggle("opacity-0");
@@ -127,49 +127,29 @@ const Socialize = ({ windowWidth }) => {
         <div className="text-sm flex flex-row flex-wrap justify-around font-bold my-4">
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">Socket.IO</span>{" "}
-            <img
-              src="/logo/socketio.svg"
-              className="w-6 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/socketio.svg" className="w-6  self-center" alt="" />
           </div>
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">MongoDB</span>{" "}
-            <img
-              src="/logo/mongodb.svg"
-              className="w-6 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/mongodb.svg" className="w-6  self-center" alt="" />
           </div>
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">ExpressJS</span>{" "}
-            <img
-              src="/logo/express.svg"
-              className="w-6 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/express.svg" className="w-6  self-center" alt="" />
           </div>
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">ReactJS</span>{" "}
-            <img
-              src="/logo/react.svg"
-              className="w-6 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/react.svg" className="w-6  self-center" alt="" />
           </div>
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">NodeJS</span>{" "}
-            <img
-              src="/logo/nodejs.svg"
-              className="w-6 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/nodejs.svg" className="w-6  self-center" alt="" />
           </div>
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">Bootstrap</span>{" "}
             <img
               src="/logo/bootstrap.svg"
-              className="w-6 h-fit self-center"
+              className="w-6  self-center"
               alt=""
             />
           </div>
@@ -177,7 +157,7 @@ const Socialize = ({ windowWidth }) => {
             <span className="self-center">Cloudinary</span>{" "}
             <img
               src="/logo/cloudinary.svg"
-              className="w-6 h-fit self-center"
+              className="w-6  self-center"
               alt=""
             />
           </div>
@@ -185,25 +165,23 @@ const Socialize = ({ windowWidth }) => {
         <div className="flex flex-row flex-wrap gap-12 justify-center font-semibold">
           <a
             target="_blank"
+            rel="noreferrer"
             href="https://github.com/achmadaffandifauzan/socialize"
             className="flex gap-2"
           >
             <span className="self-center">Code</span>
-            <img
-              src="/logo/github.svg"
-              className="w-5 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/github.svg" className="w-5  self-center" alt="" />
           </a>
           <a
             target="_blank"
+            rel="noreferrer"
             className="flex gap-2 hover:bg-[#87f7db] bg-indigo-300  transition-all px-5 py-1 rounded-xl"
             href="https://socialize.affandif.com"
           >
             <span className="self-center">Visit Website</span>
             <img
               src="/logo/new-window.svg"
-              className="w-4 h-fit self-center"
+              className="w-4  self-center"
               alt=""
             />
           </a>

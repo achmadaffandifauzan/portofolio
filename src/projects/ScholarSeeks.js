@@ -91,33 +91,21 @@ const ScholarSeeks = ({ windowWidth }) => {
         <div className="text-sm flex flex-row flex-wrap justify-around font-bold my-4">
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">Flask</span>{" "}
-            <img
-              src="/logo/flask.svg"
-              className="w-6 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/flask.svg" className="w-6  self-center" alt="" />
           </div>
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">Firebase</span>{" "}
-            <img
-              src="/logo/firebase.svg"
-              className="w-6 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/firebase.svg" className="w-6  self-center" alt="" />
           </div>
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">Kotlin</span>{" "}
-            <img
-              src="/logo/kotlin.svg"
-              className="w-4 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/kotlin.svg" className="w-4  self-center" alt="" />
           </div>
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">Scikit-learn</span>{" "}
             <img
               src="/logo/scikit_learn.svg"
-              className="w-6 h-fit self-center"
+              className="w-6  self-center"
               alt=""
             />
           </div>
@@ -125,58 +113,44 @@ const ScholarSeeks = ({ windowWidth }) => {
             <span className="self-center">Tensorflow</span>{" "}
             <img
               src="/logo/tensorflow.svg"
-              className="w-6 h-fit self-center"
+              className="w-6  self-center"
               alt=""
             />
           </div>
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">Postman</span>{" "}
-            <img
-              src="/logo/postman.svg"
-              className="w-6 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/postman.svg" className="w-6  self-center" alt="" />
           </div>
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">Docker</span>{" "}
-            <img
-              src="/logo/docker.svg"
-              className="w-6 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/docker.svg" className="w-6  self-center" alt="" />
           </div>
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">Google Cloud Platform</span>{" "}
-            <img
-              src="/logo/gcloud.svg"
-              className="w-6 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/gcloud.svg" className="w-6  self-center" alt="" />
           </div>
         </div>
 
         <div className="flex flex-row flex-wrap gap-12 justify-center font-semibold">
           <a
             target="_blank"
+            rel="noreferrer"
             href="https://github.com/capstone-bangkidss"
             className="flex gap-2"
           >
             <span className="self-center">Code</span>
-            <img
-              src="/logo/github.svg"
-              className="w-5 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/github.svg" className="w-5  self-center" alt="" />
           </a>
           <a
             target="_blank"
+            rel="noreferrer"
             className="flex gap-2 hover:bg-[#87f7db] bg-indigo-300  transition-all px-5 py-1 rounded-xl"
             href="https://youtu.be/DmHi8i2hGVI"
           >
             <span className="self-center">Demo</span>
             <img
               src="/logo/new-window.svg"
-              className="w-4 h-fit self-center"
+              className="w-4  self-center"
               alt=""
             />
           </a>

@@ -21,6 +21,7 @@ const Sampoerna = () => {
           <a
             href="https://www.sampoerna.com/"
             target="_blank"
+            rel="noreferrer"
             className="flex flex-row max-sm:self-center"
           >
             <div className="me-2">
@@ -51,6 +52,7 @@ const Sampoerna = () => {
             <a
               href="https://www.src.id/en/"
               target="_blank"
+              rel="noreferrer"
               className="font-semibold text-blue-600 inline-flex items-center"
             >
               SRC AYO Ecosystem

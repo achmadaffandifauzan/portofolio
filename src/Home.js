@@ -8,7 +8,7 @@ const Home = () => {
         <div
           data-aos="fade-right"
           data-aos-duration="500"
-          className="flex-initial flex flex-col sm:gap-4 sm:justify-center justify-around w-full sm:w-2/5"
+          className="flex flex-col sm:gap-4 sm:justify-center justify-around w-full sm:w-2/5"
         >
           <div className="text-4xl font-bold tracking-wide mt-10  max-sm:text-center">
             Full Stack Developer
@@ -30,7 +30,7 @@ const Home = () => {
         <div
           data-aos="zoom-in-left"
           data-aos-duration="500"
-          className="flex-initial w-80 sm:w-96 self-center"
+          className="w-80 sm:w-96 self-center"
         >
           <img
             alt={"photo_of_me"}

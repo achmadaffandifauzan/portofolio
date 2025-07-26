@@ -79,25 +79,17 @@ const Seareq = ({ windowWidth }) => {
         <div className="text-sm flex flex-row flex-wrap justify-around font-bold my-4">
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">Django</span>{" "}
-            <img
-              src="/logo/django.svg"
-              className="w-5 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/django.svg" className="w-5  self-center" alt="" />
           </div>
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">MySQL</span>{" "}
-            <img
-              src="/logo/mysql.svg"
-              className="w-6 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/mysql.svg" className="w-6  self-center" alt="" />
           </div>
           <div className="mx-4 my-1 flex gap-2 ">
             <span className="self-center">TailwindCSS</span>{" "}
             <img
               src="/logo/tailwindcss.svg"
-              className="w-6 h-fit self-center"
+              className="w-6  self-center"
               alt=""
             />
           </div>
@@ -105,15 +97,12 @@ const Seareq = ({ windowWidth }) => {
         <div className="flex flex-row flex-wrap gap-12 justify-center font-semibold">
           <a
             target="_blank"
+            rel="noreferrer"
             href="https://github.com/AgileRE-2023/stakeholder-requirement-retriever"
             className="flex gap-2"
           >
             <span className="self-center">Code</span>
-            <img
-              src="/logo/github.svg"
-              className="w-5 h-fit self-center"
-              alt=""
-            />
+            <img src="/logo/github.svg" className="w-5  self-center" alt="" />
           </a>
         </div>
       </div>
@@ -125,7 +114,7 @@ const Seareq = ({ windowWidth }) => {
         className="sm:w-2/5 flex flex-col justify-center gap-5 content-center relative transition-all duration-300"
         onMouseEnter={(e) => {
           if (windowWidth.current >= 640) {
-            if (loadingPNG == false) {
+            if (loadingPNG === false) {
               e.currentTarget
                 .querySelector("#preview-gif")
                 .classList.toggle("opacity-0");
@@ -137,7 +126,7 @@ const Seareq = ({ windowWidth }) => {
         }}
         onMouseLeave={(e) => {
           if (windowWidth.current >= 640) {
-            if (loadingPNG == false) {
+            if (loadingPNG === false) {
               e.currentTarget
                 .querySelector("#preview-gif")
                 .classList.toggle("opacity-0");
