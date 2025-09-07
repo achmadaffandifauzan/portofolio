@@ -29,17 +29,17 @@ const About = () => {
           data-aos-duration="500"
           className="text-xl font-extrabold mb-6"
         >
-          A dedicated Full Stack Developer based in Surabaya, Indonesia
+          Full Stack Developer based in Surabaya, Indonesia
         </div>
         <div
           data-aos="fade-left"
           data-aos-duration="500"
           className=" text-gray-700 tracking-tight"
         >
-          I am Currently a final-year student at Universitas Airlangga, pursuing
-          Bachelor of Information System. I'm passionate about creating dynamic
-          web and mobile experiences that seamlessly blend form and function. I
-          thrive on turning ideas into fully functional software applications.
+          Bachelor of Computer Science from Universitas Airlangga with
+          experience in software development. Currently a Full Stack Developer
+          at HM Sampoerna — Philip Morris International, building scalable
+          digital platforms.
         </div>
       </div>
     </div>

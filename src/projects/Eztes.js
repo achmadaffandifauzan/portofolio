@@ -118,7 +118,7 @@ const Eztes = ({ windowWidth }) => {
         data-aos-duration="300"
         className="sm:w-2/5 flex flex-col justify-center sm:gap-8"
       >
-        <div className="font-bold text-center text-sm  mb-2">EZTES</div>
+        <div className="font-bold text-center text-sm  mb-2">EZTES — 2023</div>
         <div className="text-center text-gray-700 ">
           {/* restful since it only stores session in server as authentication purposes */}
           Online Learning Platform, Powered by Node.js. This RESTful web

@@ -52,7 +52,7 @@ const ScholarSeeks = ({ windowWidth }) => {
         <div className="font-bold text-center text-sm  mb-2 gap-2 flex flex-col">
           <div className="mb-3 flex flex-row flex-wrap justify-center items-center gap-2">
             <div className="font-bold text-center text-lg leading-4">
-              SCHOLARSEEKS
+              SCHOLARSEEKS — 2024
             </div>
             <div className="flex flex-row flex-wrap justify-center items-center gap-2">
               <GreenTag text={"TEAM"} />

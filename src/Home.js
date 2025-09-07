@@ -30,12 +30,12 @@ const Home = () => {
         <div
           data-aos="zoom-in-left"
           data-aos-duration="500"
-          className="w-80 sm:w-96 self-center"
+          className="w-80 sm:w-96 self-center rounded-full overflow-hidden"
         >
           <img
             alt={"photo_of_me"}
-            src={"foto_hijau_circle.webp"}
-            className="transition-all duration-300 ease-in-out hover:scale-110"
+            src={"blue_photo.webp"}
+            className="transition-all duration-300 ease-in-out hover:scale-125"
           />
         </div>
       </div>

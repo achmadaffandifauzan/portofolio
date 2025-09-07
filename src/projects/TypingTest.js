@@ -39,7 +39,7 @@ const TypingTest = ({ windowWidth }) => {
       >
         <div className="mb-3 flex flex-row flex-wrap justify-center items-center gap-2">
           <div className="font-bold text-center text-lg leading-4">
-            TYPING-TEST
+            TYPING-TEST — 2024
           </div>
           <div className="flex flex-row flex-wrap justify-center items-center gap-2">
             <GreenTag text={"SOLO"} />
