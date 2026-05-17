@@ -1,12 +1,9 @@
 import React, { useRef } from "react";
 import Bangkit from "./Bangkit";
 import Freelance from "./Freelance";
-import Thrive from "./Thrive";
 import Sampoerna from "./Sampoerna";
 import SampoernaFullTime from "./SampoernaFullTime";
 const Experiences = () => {
-  const windowWidth = useRef(window.innerWidth);
-
   return (
     <div id="experiences-page">
       <div className="flex flex-col justify-center content-center gap-20 tracking-tight pt-20 px-5 sm:px-20">

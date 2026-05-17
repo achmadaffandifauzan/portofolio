@@ -14,6 +14,7 @@ const About = () => {
           effect="blur"
           src={"stack.webp"}
           className="rounded-xl  transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-2xl"
+          alt="about-picture"
         />
       </div>
       <div className="sm:w-2/5 flex sm:flex-row flex-wrap sm:justify-between">
