@@ -16,7 +16,6 @@ const Experiences = () => {
         <div className="flex flex-col gap-10 max-sm:gap-24">
           <SampoernaFullTime />
           <Sampoerna />
-          <Thrive />
           <Freelance />
           <Bangkit />
         </div>

@@ -1,6 +1,4 @@
 import { React, useRef } from "react";
-import Socialize from "./Socialize";
-import Vote from "./Vote";
 import TypingTest from "./TypingTest";
 import Seareq from "./Seareq";
 import ScholarSeeks from "./ScholarSeeks";
@@ -18,8 +16,6 @@ const Projects = () => {
         <TypingTest windowWidth={windowWidth} />
         <ScholarSeeks windowWidth={windowWidth} />
         <Seareq windowWidth={windowWidth} />
-        <Socialize windowWidth={windowWidth} />
-        <Vote windowWidth={windowWidth} />
       </div>
     </div>
   );
